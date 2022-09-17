@@ -124,7 +124,7 @@ a:hover a:focus {
  margin-left: 0px;
  margin-top: 5px;
  padding-left: 1%;
- padding-right: 1%;
+ padding-right: 20px;
  padding-top: 50px;
  text-align: left;
  font-style: "Open Sans",
@@ -135,7 +135,7 @@ a:hover a:focus {
  border-color: #888;
  border-width: thin;
  border-style: solid;
- width: 150px;
+ width: 120px;
 
 }
 
@@ -293,7 +293,7 @@ article li {
 
 }
 
-.reviews-byline::before {
+.review-byline::before {
  content: "-";
 
 }
@@ -302,7 +302,6 @@ article li {
  color: #787878;
  font-size: 14px;
  text-align: right;
- padding: 15px;
 }
 
 ::selection {
