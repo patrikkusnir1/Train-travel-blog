@@ -125,8 +125,9 @@ a:hover a:focus {
 #navigation {
  float: left;
  height: 100%;
- margin-left: -130px;
+ margin-left: -110px;
  margin-top: 5px;
+ margin-right: 10px;
  padding-left: 1%;
  padding-right: 1%;
  padding-top: 50px;
@@ -151,7 +152,7 @@ a:hover a:focus {
  margin: 0px;
 }
 */
-#navigation h1 {
+#navigation h2 {
  font-size: 1.2em;
  font-family: "Open Sans",
   sans-serif;
@@ -169,9 +170,8 @@ a:hover a:focus {
  margin-inline-end: 0px;
 }
 
-.introduction,
-.london {
- padding-left: 70px;
+article{
+ padding-left: 100px;
 }
 
 table td {
@@ -179,15 +179,6 @@ table td {
  border-collapse: collapse;
  border-color: #111111;
  padding: 3px;
-}
-
-article li::marker {
- unicode-bidi: isolate;
- font-variant-numeric: tabular-nums;
- text-transform: none;
- text-indent: 0px !important;
- text-align: start !important;
- text-align-last: start !important;
 }
 
 article li {
@@ -211,7 +202,7 @@ article li {
 
 .photo img {
  border-radius: 50%;
- border: 10px solid #eee;
+ border: 1px solid #eee;
  margin-top: 10px;
 
 }
@@ -309,13 +300,12 @@ article li {
  font-size: 0.8em;
  font-weight: 400;
  color: #454545;
-
 }
 
 .shadow p {
- margin-top: 10px;
- margin-bottom: 8px;
- text-align: center;
+ margin-bottom: 18px;
+ text-align: left;
+ padding: 0;
 }
 
 .shadow:first-child {
@@ -347,7 +337,7 @@ h2 {
 }
 
 .eurostar {
- border-collapse: collapse;
+
  padding: 3px;
 }
 .first-class{
@@ -368,3 +358,33 @@ color: #ca0000;
  margin-bottom: 0;
  width: 344px;
 }
+
+.column1 {
+ float: left;
+ width: 46.5%;
+ padding: 5px;
+}
+.column2 {
+ float: left;
+ width: 41%;
+ padding: 5px;
+}
+.column3 {
+ float: left;
+ width: 35%;
+ padding: 5px;
+}
+.column4 {
+ float: left;
+ width: 46%;
+ padding: 5px;
+}
+
+.row::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+
+
