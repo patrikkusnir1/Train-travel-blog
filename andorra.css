@@ -1,0 +1,99 @@
+.container>header {
+ margin: 10px;
+ padding: 20px 10px 10px 10px;
+ position: relative;
+ display: block;
+ text-shadow: 1px 1px 1px rgb(0 0 0/20%);
+ text-align: center;
+}
+
+.container>header h1 {
+ font-size: 55px;
+ line-height: 38px;
+ margin: 0;
+ position: relative;
+ font-weight: 300;
+ text-shadow: 0 1px 1px rgb(255 255 255/60%);
+ letter-spacing: 5px;
+}
+
+.container>header h2 {
+ font-size: 14px;
+ font-weight: 300;
+ margin: 0;
+ padding: 15px 0 5px 0;
+ color: #666;
+ font-family: Cambria, Georgia, serif;
+ font-style: italic;
+ text-shadow: 0 1px 1px rgb(255 255 255/60%);
+
+}
+
+.container {
+ width: 100%;
+ position: relative;
+ transition: all .5s;
+}
+
+#check:checked~div.container {
+ margin-left: 700px;
+}
+
+.top {
+ line-height: 24px;
+ font-size: 11px;
+ background: rgba(255, 255, 255, 0.90);
+ text-transform: uppercase;
+ z-index: 9999;
+ position: relative;
+ font-family: Cambria, Georgia, serif;
+ box-shadow: 1px 0px 2px rgb(0 0 0/20%);
+}
+
+.right {
+ float: right;
+}
+
+span.right {
+ text-align: right;
+}
+
+.right a {
+ float: left;
+ display: block;
+}
+
+.group::before,
+.group::after {
+ content: " ";
+ display: table;
+}
+
+.group::after {
+ clear: both;
+}
+
+.group {
+ *zoom: 1;
+}
+
+p.right {
+ text-align: right;
+}
+
+.logo a {
+
+ display: block;
+ height: 200px;
+ text-indent: -9999px;
+ margin: 0 auto;
+ margin-top: 15px;
+ background: url(Albania/logo.png) no-repeat center center;
+ background-color: #f0f0f0;
+ background-blend-mode: multiply;
+}
+
+.logo {
+ margin: 0;
+ position: relative;
+}
