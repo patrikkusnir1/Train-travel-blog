@@ -21,30 +21,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="css/albania.css">
 </head>
 
 <body>
 
   <div class="container">
-    <div id="fademe">
-      <div class="top group">
-        <span class="right">
-          <a href="/start_page/index.html"> <strong> Back to homepage</strong></a>
+
+
+
+    <!-- ****************HEADER *********** -->
+
+
+    <header class="post-header">
+      <div class="logo">
+        <a href="#">Train travel</a>
+      </div>
+      <div class="burger">
+        <span>
+
         </span>
       </div>
-      <h2 class="logo">
-        <a href="#">Train travel blog</a>
-      </h2>
 
-
-      <!-- *********************************** HEADER *************************************** -->
-
-
-      <header class="post-header">
-        <!-- A quadratic delay; each letter's delay grows by the power of two -->
-        <h1 class="post-title sentence" id="hore">
+      <!-- <h1 class="post-title sentence" id="hore">
           <span class="letter">A</span>
           <span class="letter">L</span>
           <span class="letter">B</span>
@@ -52,41 +54,120 @@
           <span class="letter">N</span>
           <span class="letter">I</span>
           <span class="letter">A</span>
-        </h1>
-        <h2 class="post-meta">
-          <span class="written-by">by </span><a href="#" class="author">Patrik Kusnir</a>
-          <time datetime="2022-11-09 19:07">September 11, 2022</time>
-        </h2>
-      </header>
+        </h1> -->
+    </header>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Get in touch</a></li>
+      </ul>
+    </div>
+    <div class="page">
+      <div class="page-left">
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img src="./Albania/albania1.jpg" alt="Albania">
+          </div>
+          <div class="carousel-cell">
+            <img src="./Albania/albania2.jpg" alt="Albania">
+          </div>
+          <div class="carousel-cell">
+            <img src="./Albania/albania3.jpg" alt="Albania">
+          </div>
+        </div>
+      </div>
+      <div class="page-right">
+        <div class="hero">
+          <div class="title">
+            <h1>Albania</h1>
+          </div>
+          <!-- <div class="save">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div> -->
+        </div>
+        <div class="user-wrap">
+          <div class="user">
+            <div class="img">
+              <a href="#">
+                <img src="./Albania/author.jpg" alt="user">
+              </a>
+            </div>
+            <div class="bio">
+              <a href="#">Patrik Kusnir</a> <br>
+              <span>Traveller, pharmacist, frontend developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-wrap">
+          <div class="text">
+            <p>
+              Albania, known to Albanians as Shqipëria or Land of the Eagles, was once Europe's most mysterious
+              country.
+              A Stalinist
+              dictatorship from 1946 to 1991, it shut itself off from the rest of the world. However, the Communist
+              regime was
+              overturned in 1991 and most of Albania is now safe to visit. It's easy to reach from western Europe by
+              train to Italy
+              then ferry across the Adriatic, or it can be reached overland by train to Montenegro then bus or taxi
+              across the border
+              into Albania. It's a fascinating country that will challenge your pre-conceptions of things Albanian.
+            </p>
+          </div>
+        </div>
+        <div class="slider-wrap">
+          <div class="slider">
+            <div class="slider-item">
+              <img src="Albania/Albania-Skenderbeg.jpg" alt="Albania statue">
+            </div>
+            <div class="slider-item">
+              <img src="Albania/Albania-train-seats.jpg" alt="Albania statue">
+            </div>
+            <div class="slider-item">
+              <img src="Albania/Albania-gnv-ferry.jpg" alt="Albania statue">
+            </div>
+            <div class="slider-item">
+              <img src="Albania/Albania-train-2014.jpg" alt="Albania statue">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- *********************************** SIDEBAR *************************************** -->
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-      </label>
-      <div class="sidebar">
-        <header>
-          Krajiny
-        </header>
-        <ul>
-          <li><a href="albania.html"> <img src="Albania/albania.png" alt="Albanian flag logo">Albánsko</a>
-          </li>
-          <li><a href="andorra.html"><img src="Albania/andorra.png" alt="Andorra flag logo">Andorra</a>
-          </li>
-          <li><a href="#"> <img src="Albania/bosnia-and-herzegovina.png" alt="Bosnian flag logo">Bosna a Hercegovina</a>
-          </li>
-          <li> <a href="#"> <img src="Albania/bulgaria.png" alt="Bulgarian flag logo">Bulharsko</a></li>
-          <li> <a href="#"> <img src="Albania/cyprus.png" alt="Cyprus flag logo">Cyprus</a></li>
-          <li> <a href="#"> <img src="Albania/czech-republic.png" alt="Czech flag logo">Česká republika</a></li>
-          <li> <a href="#"> <img src="Albania/montenegro.png" alt="Montenegro flag logo">Čierna hora</a></li>
-          <li> <a href="#"> <img src="Albania/denmark.png" alt="Denmark flag logo">Dánsko</a></li>
-          <li> <a href="#"> <img src="Albania/estonia.png" alt="Estonian flag logo">Estónsko</a></li>
-          <li> <a href="#"> <img src="Albania/finland.png" alt="Finland flag logo">Fínsko</a></li>
+  </div>
 
-          <!--<li>Francúzsko</li>
+  <!-- *********************************** SIDEBAR *************************************** -->
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>
+        Krajiny
+      </header>
+      <ul>
+        <li><a href="albania.html"> <img src="Albania/albania.png" alt="Albanian flag logo">Albánsko</a>
+        </li>
+        <li><a href="andorra.html"><img src="Albania/andorra.png" alt="Andorra flag logo">Andorra</a>
+        </li>
+        <li><a href="#"> <img src="Albania/bosnia-and-herzegovina.png" alt="Bosnian flag logo">Bosna a Hercegovina</a>
+        </li>
+        <li> <a href="#"> <img src="Albania/bulgaria.png" alt="Bulgarian flag logo">Bulharsko</a></li>
+        <li> <a href="#"> <img src="Albania/cyprus.png" alt="Cyprus flag logo">Cyprus</a></li>
+        <li> <a href="#"> <img src="Albania/czech-republic.png" alt="Czech flag logo">Česká republika</a></li>
+        <li> <a href="#"> <img src="Albania/montenegro.png" alt="Montenegro flag logo">Čierna hora</a></li>
+        <li> <a href="#"> <img src="Albania/denmark.png" alt="Denmark flag logo">Dánsko</a></li>
+        <li> <a href="#"> <img src="Albania/estonia.png" alt="Estonian flag logo">Estónsko</a></li>
+        <li> <a href="#"> <img src="Albania/finland.png" alt="Finland flag logo">Fínsko</a></li>
+
+        <!--<li>Francúzsko</li>
               <li>Gibraltár</li>
               <li>Grécko</li>
               <li>Holandsko</li>
@@ -114,10 +195,10 @@
               <li>Taliansko</li>
               <li>Turecko</li>
               <li>Ukrajina</li> -->
-          <!-- </ul>
+        <!-- </ul>
           </div> -->
-    </nav>
-    <!--  
+  </nav>
+  <!--  
     <div id="navigation">
       <h2>
         Train travel
@@ -330,419 +411,429 @@
       </table>
     </div>
     -->
-    <main>
-      <article>
-        <section>
-          <h2>Visiting Albania...</h2>
-          <div class="container-introduction">
-            <p class="container-box paragraph">
-              Albania, which Albanians call Shqipëria or Land of the Eagles, was
-              once the most mysterious country in Europe. It became a Stalinist
-              dictatorship in 1946, and was almost completely shut off from the
-              rest of the world for decades. However, the Communist regime was
-              overturned in 1991 and in spite of well-publicised troubles in 1992
-              & 1997, most of Albania is now safe to visit - you can check
-              <a href="https://www.mzv.sk/web/sk/albansko">here</a>.
+  <main>
+    <article>
+      <section>
+        <h2>Visiting Albania by train</h2>
+        <div class="container-introduction">
+          <div class="text-content">
+            <p>
+              Albania, known to Albanians as Shqipëria or Land of the Eagles, was once Europe's most mysterious
+              country.
+              A Stalinist
+              dictatorship from 1946 to 1991, it shut itself off from the rest of the world. However, the Communist
+              regime was
+              overturned in 1991 and most of Albania is now safe to visit. It's easy to reach from western Europe by
+              train to Italy
+              then ferry across the Adriatic, or it can be reached overland by train to Montenegro then bus or taxi
+              across the border
+              into Albania. It's a fascinating country that will challenge your pre-conceptions of things Albanian.
             </p>
-            <div class="container-box container-picture">
+          </div>
+
+          <div class="image-content">
+            <div class="col card shadow-sm d-flex gap-2">
               <img src="Albania/Albania-Skenderbeg.jpg" alt="Albania-Skenderbeg">
-              <p class="update">
-                The statue of Skënderbeg, Albania's national hero, in
-                Skënderbeg Square in Tiranë
-              </p>
             </div>
-            <p class="update">
-              <strong>COVID-19 update:</strong> Trains are running between the UK
-              & continental Europe. Eurostar is running a reduced service. Beyond
-              Paris & Brussels, train service is now normal.
+            <p>
+              The statue of Skënderbeg, Albania's national hero, in
+              Skënderbeg Square in Tiranë
             </p>
-        </section>
-        <section>
-          <h2>From London to Tirane</h2>
-          <ul>
-            <li>
-              <p>
-                Day 1, travel from London to Paris by Eurostar, leaving London
-                St Pancras at 09:31 arriving Paris Nord at 12:47. Cross Paris by
-                metro or taxi to the Gare de Lyon (2 stops on RER line D). Tip:
-                On Mondays-Saturdays, have lunch at the remarkable Train Bleu
-                restaurant inside the Gare de Lyon.
-              </p>
-            </li>
+          </div>
+        </div>
 
-            <li>
-              <p>
-                Day 1, travel from Paris to Milan by high-speed TGV, leaving
-                Paris Gare de Lyon at 14:43 and arriving at Milan Porta
-                Garibaldi at 21:49.
-              </p>
-              <p class="second">
-                It's a relaxing and comfortable journey, passing directly from
-                France into Italy via Modane and the Mont Cénis tunnel through
-                the Alps. The TGV has 1st & 2nd class plus a cafe-bar serving
-                drinks, snacks & tray-meals. What's the journey like? See the
-                Paris-Milan TGV video guide.
-              </p>
-            </li>
-            <li>
-              <p>
-                Stay overnight in Milan. The AC Milano Hotel (a Marriott
-                Lifestyle Hotel) is 350m from Milan Porta Garibaldi station and
-                gets good reviews.
-              </p>
-            </li>
-            <li>
-              <p>
-                Day 2, travel from Milan to Bari by air-conditioned Frecciarossa
-                train leaving Milan Porta Garibaldi at 10:13 and arriving Bari
-                Centrale at 17:27.
-              </p>
-              <p class="second">
-                There is a cafe-bar, or feel free to bring your own food & wine.
-                The train follows the Adriatic coast for much of the way, past
-                small towns and seaside resorts. In Bari, you can walk (25
-                minutes) or take a taxi to the ferry terminal, which is next to
-                Bari's attractive old town. If you'd like to reach Bari earlier,
-                there's an earlier 07:05 Intercity train from Milan Centrale (a
-                short taxi ride or 25 minute walk from Milan Porta Garibaldi)
-                arriving Bari Centrale at 17:05.
-              </p>
-            </li>
+      </section>
+      <section>
+        <h2>From London to Tirane</h2>
+        <ul>
+          <li>
+            <p>
+              Day 1, travel from London to Paris by Eurostar, leaving London
+              St Pancras at 09:31 arriving Paris Nord at 12:47. Cross Paris by
+              metro or taxi to the Gare de Lyon (2 stops on RER line D). Tip:
+              On Mondays-Saturdays, have lunch at the remarkable Train Bleu
+              restaurant inside the Gare de Lyon.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Day 2, sail from Bari to Durrës in Albania by overnight ferry,
-                usually sailing around 22:00 and arriving around 07:00 or 08:00.
-              </p>
-              <p class="second">
-                The easiest way to check ferry times & prices for all ferry
-                operators on this route is at
-                <a href="http://directferries.co.uk">Direct Ferries</a>, which
-                checks all operators at once.
-                <a href="http://gnv.it">Grandi Navi Veloce</a> sail daily
-                overnight departing Bari at 22:00 or 23:00 and arriving Durres
-                at 08:00 (day 3 from London),
-                <a href="http://ventouris.gr">Ventouris Ferries</a> also sail
-                daily overnight to similar timings.
-                <a href="http://adriaferries.com">Adria ferries</a> sail
-                overnight too, also leaving at 22:00 or 23:00 and arriving at
-                08:00. Whichever operator you choose, a range of comfortable
-                cabins is available on the overnight crossings.
-              </p>
-            </li>
-            <li>
-              <p>
-                Day 3, morning: See the timetable below for train service within
-                Albania from Durrës.
-              </p>
-            </li>
-          </ul>
+          <li>
+            <p>
+              Day 1, travel from Paris to Milan by high-speed TGV, leaving
+              Paris Gare de Lyon at 14:43 and arriving at Milan Porta
+              Garibaldi at 21:49.
+            </p>
+            <p class="second">
+              It's a relaxing and comfortable journey, passing directly from
+              France into Italy via Modane and the Mont Cénis tunnel through
+              the Alps. The TGV has 1st & 2nd class plus a cafe-bar serving
+              drinks, snacks & tray-meals. What's the journey like? See the
+              Paris-Milan TGV video guide.
+            </p>
+          </li>
+          <li>
+            <p>
+              Stay overnight in Milan. The AC Milano Hotel (a Marriott
+              Lifestyle Hotel) is 350m from Milan Porta Garibaldi station and
+              gets good reviews.
+            </p>
+          </li>
+          <li>
+            <p>
+              Day 2, travel from Milan to Bari by air-conditioned Frecciarossa
+              train leaving Milan Porta Garibaldi at 10:13 and arriving Bari
+              Centrale at 17:27.
+            </p>
+            <p class="second">
+              There is a cafe-bar, or feel free to bring your own food & wine.
+              The train follows the Adriatic coast for much of the way, past
+              small towns and seaside resorts. In Bari, you can walk (25
+              minutes) or take a taxi to the ferry terminal, which is next to
+              Bari's attractive old town. If you'd like to reach Bari earlier,
+              there's an earlier 07:05 Intercity train from Milan Centrale (a
+              short taxi ride or 25 minute walk from Milan Porta Garibaldi)
+              arriving Bari Centrale at 17:05.
+            </p>
+          </li>
 
-          <h2>From Tirane to London</h2>
-          <ul>
-            <li>
-              <p>
-                Day 1, sail from Durrës to Bari by overnight ferry, usually
-                sailing around 22:00 and arriving around 07:00 or 08:00.
-              </p>
-              <p>
-                The easiest way to check ferry times & prices for all ferry
-                operators on this route is at www.directferries.co.uk, this
-                checks all of them at once. Grandi Navi Veloce & Ventouris
-                Ferries both sail daily leaving Durrës at 22:00 or 23:00 and
-                arriving in Bari at 07:00 or 08:00 next morning, see www.gnv.it
-                & www.ventouris.gr. You can also try Adria ferries
-                (www.adriaferries.com) who also sail overnight. Whichever
-                operator you choose, a range of comfortable cabins is available
-                on the overnight crossings.
-              </p>
-            </li>
+          <li>
+            <p>
+              Day 2, sail from Bari to Durrës in Albania by overnight ferry,
+              usually sailing around 22:00 and arriving around 07:00 or 08:00.
+            </p>
+            <p class="second">
+              The easiest way to check ferry times & prices for all ferry
+              operators on this route is at
+              <a href="http://directferries.co.uk">Direct Ferries</a>, which
+              checks all operators at once.
+              <a href="http://gnv.it">Grandi Navi Veloce</a> sail daily
+              overnight departing Bari at 22:00 or 23:00 and arriving Durres
+              at 08:00 (day 3 from London),
+              <a href="http://ventouris.gr">Ventouris Ferries</a> also sail
+              daily overnight to similar timings.
+              <a href="http://adriaferries.com">Adria ferries</a> sail
+              overnight too, also leaving at 22:00 or 23:00 and arriving at
+              08:00. Whichever operator you choose, a range of comfortable
+              cabins is available on the overnight crossings.
+            </p>
+          </li>
+          <li>
+            <p>
+              Day 3, morning: See the timetable below for train service within
+              Albania from Durrës.
+            </p>
+          </li>
+        </ul>
 
-            <li>
-              <p>
-                Day 2, travel from Bari to Milan by air-conditioned
-                Frecciargento train leaving Bari Centrale at 10:30 and arriving
-                in Milan Centrale at 17:55.
-              </p>
-              <p class="second">
-                There is a refreshment trolley, or feel free to bring your own
-                food and wine. In Milan, it's a 25 minute walk or 8-minute €8
-                taxi ride from Milan Centrale to Milan Porta Garibaldi.
-              </p>
-            </li>
-            <li>
-              <p>
-                <em> Stay overnight in Milan</em>, a beautiful city that's well
-                worth an extra day for a stopover. The AC Milano Hotel (a
-                Marriott Lifestyle Hotel) is 350m from Milan Porta Garibaldi and
-                gets good reviews.
-              </p>
-            </li>
-            <li>
-              <p>
-                Day 3, travel from Milan to Paris by high-speed TGV, leaving
-                Milan Porta Garibaldi at 06:00 and arriving Paris Gare de Lyon
-                at 13:13.
-              </p>
-              <p class="second">
-                There is a café-bar serving drinks, snacks & light meals, and
-                it's a scenic journey through the Alps via the Mont Cénis
-                tunnel, Modane and Chambéry. What's the journey like? See the
-                Paris-Milan TGV video guide.
-              </p>
+        <h2>From Tirane to London</h2>
+        <ul>
+          <li>
+            <p>
+              Day 1, sail from Durrës to Bari by overnight ferry, usually
+              sailing around 22:00 and arriving around 07:00 or 08:00.
+            </p>
+            <p>
+              The easiest way to check ferry times & prices for all ferry
+              operators on this route is at www.directferries.co.uk, this
+              checks all of them at once. Grandi Navi Veloce & Ventouris
+              Ferries both sail daily leaving Durrës at 22:00 or 23:00 and
+              arriving in Bari at 07:00 or 08:00 next morning, see www.gnv.it
+              & www.ventouris.gr. You can also try Adria ferries
+              (www.adriaferries.com) who also sail overnight. Whichever
+              operator you choose, a range of comfortable cabins is available
+              on the overnight crossings.
+            </p>
+          </li>
 
-              <p class="second">
-                Cross Paris by metro or taxi to the Gare du Nord, 2 stops on RER
-                line D.
-              </p>
-            </li>
+          <li>
+            <p>
+              Day 2, travel from Bari to Milan by air-conditioned
+              Frecciargento train leaving Bari Centrale at 10:30 and arriving
+              in Milan Centrale at 17:55.
+            </p>
+            <p class="second">
+              There is a refreshment trolley, or feel free to bring your own
+              food and wine. In Milan, it's a 25 minute walk or 8-minute €8
+              taxi ride from Milan Centrale to Milan Porta Garibaldi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em> Stay overnight in Milan</em>, a beautiful city that's well
+              worth an extra day for a stopover. The AC Milano Hotel (a
+              Marriott Lifestyle Hotel) is 350m from Milan Porta Garibaldi and
+              gets good reviews.
+            </p>
+          </li>
+          <li>
+            <p>
+              Day 3, travel from Milan to Paris by high-speed TGV, leaving
+              Milan Porta Garibaldi at 06:00 and arriving Paris Gare de Lyon
+              at 13:13.
+            </p>
+            <p class="second">
+              There is a café-bar serving drinks, snacks & light meals, and
+              it's a scenic journey through the Alps via the Mont Cénis
+              tunnel, Modane and Chambéry. What's the journey like? See the
+              Paris-Milan TGV video guide.
+            </p>
 
-            <li>
-              <p>
-                Day 3, travel from Paris to London by Eurostar, leaving Paris
-                Gare du Nord at 15:13 & arriving London St Pancras 16:30 (16:37
-                on Sundays).
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="cost">
-          <h2>How much does it cost</h2>
-          <ul>
-            <li>
-              London to Paris by Eurostar starts at £52 one-way or £78 return in
-              standard class, £115 one-way, £199 return standard premier (1st
-              class).
-            </li>
-            <li>
-              Paris to Milan by TGV starts at €29 each way in 2nd class, €44
-              each way in 1st class.
-            </li>
-            <li>
-              Milan to Bari starts at €29.90 in 2nd class or €39.90 in 1st
-              class, each way.
-            </li>
-            <li>
-              All these fares are dynamic, meaning they vary like air fares
-              depending how popular that date & train is, and how far ahead you
-              book.
-            </li>
-            <li>
-              <p>
-                Bari to Durres by ferry: The cost varies by operator, season &
-                type of seat/berth/cabin. For example:
-              </p>
-              <p class="ferry first">
-                €47 - €65 each way in a reclining seat, depending on season
-                (Adria).
-              </p>
-              <p class="ferry">
-                €51 each way with bed in outside 4-berth cabin (Ventouris
-                Ferries).
-              </p>
-              <p class="ferry">
-                €74 - €101 each way with a bed in a 2-berth outside cabin
-                (Adria).
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="tickets">
-          <h2>How to buy tickets...</h2>
-          <ul>
-            <li>
-              <p>
-                <span class="bold">Step 1, start by booking the ferry.</span>
-                You can easily check prices & sailing dates for all
-                Italy-Albania ferry operators using the Direct Ferries website.
-                The price you initially see is for a 'deck place', you can add a
-                cabin at the next stage. When you book, you are emailed a
-                confirmation which you present at check-in to exchange for your
-                boarding pass.
-              </p>
-            </li>
-            <li>
-              <p>
-                <span class="bold">
-                  Step 2, go to European train booking site
-                </span>
-                <a href="http://raileurope.com">www.raileurope.com</a> . There's
-                a small booking fee but all tickets can be booked easily in
-                plain English all in one place. Anyone from any country
-                worldwide can use raileurope.com as all international credit
-                cards are accepted.
-                <a href="#">Who are Raileurope.com?</a>
-              </p>
-              <p class="second">
-                Booking for Eurostar opens up to 180 days ahead, for the TGV &
-                Italian trains usually up to 120 days ahead, although British
-                domestic trains usually only open around 90 days ahead.
-              </p>
-              <p class="second">
-                First book from 'London (any station)' to 'Milan (any station)',
-                looking for the journey by Eurostar & TGV listed above which
-                will be shown in the search results as having 1 change. Add this
-                to your basket. It can help to read the detailed booking tips
-                here. Raileurope.com can in fact book from any station in
-                Britain, not just London.
-              </p>
-              <p class="second">
-                Use the suggested Eurostar times on this page as a guide, but
-                feel free to choose an earlier Eurostar from London southbound,
-                or a later Eurostar returning from Paris northbound, if these
-                have cheaper seats available or if you'd like to stop off in
-                Paris. To stop off and perhaps have lunch in Paris, run a London
-                to Milan enquiry after clicking 'More options', entering 'Paris'
-                and setting a stopover of however many hours you want.
-              </p>
-              <p class="second">
-                Second, book from Milan to Bari for the following day, add this
-                to your basket and check out, paying for all your tickets as one
-                transaction.
-              </p>
-              <p class="second">
-                You'll get print-at-home tickets for the Eurostar & the TGV, the
-                Trenitalia train is ticketless, you simply print out the booking
-                reference or show it on your phone. Easy!
-              </p>
-            </li>
-            <li>
-              <p>
-                <span class="cursive">Alternatively</span>, each train can
-                also be booked at www.thetrainline.com, easily in plain English,
-                in €, £ or $, also with print-your-own, show-on-smartphone
-                tickets or ticketless. Who are Thetrainline.com?
-              </p>
-            </li>
-            <li>
-              <p>
-                <span class="cursive">Alternatively</span>, you can book
-                each train separately direct from the relevant operator with no
-                booking fee, although this means more work and the fares will be
-                the same. First book your London-Paris train at
-                <a href="http://eurostar.com">www.eurostar.com</a>, and the
-                Paris-Milan TGV at
-                <a href="http://sncf-connect.com">www.sncf-connect.com</a>. Both
-                sites give print-at-home tickets with no booking fee. You can
-                then book the Milan to Bari train at the Italian Railways
-                website
-                <a href="http://trenitalia.com">www.trenitalia.com</a>(requires
-                Italian-language place names and has a few quirks, but no
-                booking fee, see this advice on how to use it), looking for a
-                cheap Economy or Super-Economy fare. You pay online and quote
-                your reservation reference to the conductor on the train.
-              </p>
-            </li>
-            <li>
-              <p>
-                <em>To book train tickets by phone</em>, try Ffestiniog Travel
-                or International Rail, see
-                <a href="https://www.seat61.com/european-train-tickets-by-phone.htm">
-                  here for phone numbers & opening times.</a>
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>What's the journey like</h2>
-          <h3>
-            1. London to Paris by Eurostar...
-          </h3>
-          <p class="second padding">
-            Eurostar trains link London & Paris in 2h20, travelling at up to 300
-            km/h (186 mph). There are two bar cars, power sockets at all seats
-            and free WiFi. Standard Premier and Business Premier fares include a
-            light meal with wine (or breakfast, on departures before 11:00).
-            There's a 30-minute minimum check-in at London St Pancras (45-minute
-            minimum in Paris, Brussels & Amsterdam) as all border formalities
-            are carried out before you board the train. More information about
-            Eurostar including check-in procedure. St Pancras station guide.
-            Paris Gare du Nord station guide. How to cross Paris by metro or
-            taxi.
-          </p>
+            <p class="second">
+              Cross Paris by metro or taxi to the Gare du Nord, 2 stops on RER
+              line D.
+            </p>
+          </li>
 
-          <!-- ALBUM SECTION 1 -->
-          <div class="album py-2">
-            <div class="container">
+          <li>
+            <p>
+              Day 3, travel from Paris to London by Eurostar, leaving Paris
+              Gare du Nord at 15:13 & arriving London St Pancras 16:30 (16:37
+              on Sundays).
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="cost">
+        <h2>How much does it cost</h2>
+        <ul>
+          <li>
+            London to Paris by Eurostar starts at £52 one-way or £78 return in
+            standard class, £115 one-way, £199 return standard premier (1st
+            class).
+          </li>
+          <li>
+            Paris to Milan by TGV starts at €29 each way in 2nd class, €44
+            each way in 1st class.
+          </li>
+          <li>
+            Milan to Bari starts at €29.90 in 2nd class or €39.90 in 1st
+            class, each way.
+          </li>
+          <li>
+            All these fares are dynamic, meaning they vary like air fares
+            depending how popular that date & train is, and how far ahead you
+            book.
+          </li>
+          <li>
+            <p>
+              Bari to Durres by ferry: The cost varies by operator, season &
+              type of seat/berth/cabin. For example:
+            </p>
+            <p class="ferry first">
+              €47 - €65 each way in a reclining seat, depending on season
+              (Adria).
+            </p>
+            <p class="ferry">
+              €51 each way with bed in outside 4-berth cabin (Ventouris
+              Ferries).
+            </p>
+            <p class="ferry">
+              €74 - €101 each way with a bed in a 2-berth outside cabin
+              (Adria).
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="tickets">
+        <h2>How to buy tickets...</h2>
+        <ul>
+          <li>
+            <p>
+              <span class="bold">Step 1, start by booking the ferry.</span>
+              You can easily check prices & sailing dates for all
+              Italy-Albania ferry operators using the Direct Ferries website.
+              The price you initially see is for a 'deck place', you can add a
+              cabin at the next stage. When you book, you are emailed a
+              confirmation which you present at check-in to exchange for your
+              boarding pass.
+            </p>
+          </li>
+          <li>
+            <p>
+              <span class="bold">
+                Step 2, go to European train booking site
+              </span>
+              <a href="http://raileurope.com">www.raileurope.com</a> . There's
+              a small booking fee but all tickets can be booked easily in
+              plain English all in one place. Anyone from any country
+              worldwide can use raileurope.com as all international credit
+              cards are accepted.
+              <a href="#">Who are Raileurope.com?</a>
+            </p>
+            <p class="second">
+              Booking for Eurostar opens up to 180 days ahead, for the TGV &
+              Italian trains usually up to 120 days ahead, although British
+              domestic trains usually only open around 90 days ahead.
+            </p>
+            <p class="second">
+              First book from 'London (any station)' to 'Milan (any station)',
+              looking for the journey by Eurostar & TGV listed above which
+              will be shown in the search results as having 1 change. Add this
+              to your basket. It can help to read the detailed booking tips
+              here. Raileurope.com can in fact book from any station in
+              Britain, not just London.
+            </p>
+            <p class="second">
+              Use the suggested Eurostar times on this page as a guide, but
+              feel free to choose an earlier Eurostar from London southbound,
+              or a later Eurostar returning from Paris northbound, if these
+              have cheaper seats available or if you'd like to stop off in
+              Paris. To stop off and perhaps have lunch in Paris, run a London
+              to Milan enquiry after clicking 'More options', entering 'Paris'
+              and setting a stopover of however many hours you want.
+            </p>
+            <p class="second">
+              Second, book from Milan to Bari for the following day, add this
+              to your basket and check out, paying for all your tickets as one
+              transaction.
+            </p>
+            <p class="second">
+              You'll get print-at-home tickets for the Eurostar & the TGV, the
+              Trenitalia train is ticketless, you simply print out the booking
+              reference or show it on your phone. Easy!
+            </p>
+          </li>
+          <li>
+            <p>
+              <span class="cursive">Alternatively</span>, each train can
+              also be booked at www.thetrainline.com, easily in plain English,
+              in €, £ or $, also with print-your-own, show-on-smartphone
+              tickets or ticketless. Who are Thetrainline.com?
+            </p>
+          </li>
+          <li>
+            <p>
+              <span class="cursive">Alternatively</span>, you can book
+              each train separately direct from the relevant operator with no
+              booking fee, although this means more work and the fares will be
+              the same. First book your London-Paris train at
+              <a href="http://eurostar.com">www.eurostar.com</a>, and the
+              Paris-Milan TGV at
+              <a href="http://sncf-connect.com">www.sncf-connect.com</a>. Both
+              sites give print-at-home tickets with no booking fee. You can
+              then book the Milan to Bari train at the Italian Railways
+              website
+              <a href="http://trenitalia.com">www.trenitalia.com</a>(requires
+              Italian-language place names and has a few quirks, but no
+              booking fee, see this advice on how to use it), looking for a
+              cheap Economy or Super-Economy fare. You pay online and quote
+              your reservation reference to the conductor on the train.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>To book train tickets by phone</em>, try Ffestiniog Travel
+              or International Rail, see
+              <a href="https://www.seat61.com/european-train-tickets-by-phone.htm">
+                here for phone numbers & opening times.</a>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>What's the journey like</h2>
+        <h3>
+          1. London to Paris by Eurostar...
+        </h3>
+        <p class="second padding">
+          Eurostar trains link London & Paris in 2h20, travelling at up to 300
+          km/h (186 mph). There are two bar cars, power sockets at all seats
+          and free WiFi. Standard Premier and Business Premier fares include a
+          light meal with wine (or breakfast, on departures before 11:00).
+          There's a 30-minute minimum check-in at London St Pancras (45-minute
+          minimum in Paris, Brussels & Amsterdam) as all border formalities
+          are carried out before you board the train. More information about
+          Eurostar including check-in procedure. St Pancras station guide.
+          Paris Gare du Nord station guide. How to cross Paris by metro or
+          taxi.
+        </p>
 
-              <!-- WRAPPER OF ALL CARDS IN THIS SECTION -->
+        <!-- ALBUM SECTION 1 -->
+        <div class="album py-2">
+          <div class="container">
 
-              <div class="row row-cols-sm-2 row-cols-md-2 g-3">
+            <!-- WRAPPER OF ALL CARDS IN THIS SECTION -->
 
-                <!-- CARD 1 -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="Albania/Eurostar1.jpg" alt="Eurostar e320"
+            <div class="row row-cols-sm-2 row-cols-md-2 g-3">
+
+              <!-- CARD 1 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="Albania/Eurostar1.jpg" alt="Eurostar e320"
+                    class="figure-img img-fluid rounded object-fit-cover">
+                  <div class="card-body">
+                    <p class="card-text">A Eurostar e320 at St Pancras.
+                      <a href="https://www.seat61.com/trains-and-routes/london-to-paris-by-eurostar.htm"
+                        target="_blank">
+                        More about Eurostar.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="Albania/Eurostar2.jpg" alt="eurostar e320 first class"
+                    class="figure-img img-fluid rounded object-fit-cover">
+                  <div class="card-body">
+                    <p class="card-text">1st class: Standard Premier or Business Premier.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <a href="Albania/eurostar3-large.jpg" target="_blank">
+                    <img src="Albania/eurostar3.jpg" class="figure-img img-fluid rounded object-fit-cover"
+                      alt=" Eurostar standard seats">
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">A Eurostar e320 at St Pancras.
+                      Standard class seats.<a href="Albania/eurostar3-large.jpg" target="_blank"> Larger photo</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 4 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <a href="images/Albania/eurostar4-large.jpg" target="_blank">
+                    <img src="Albania/eurostar4.jpg" alt="eurostar bar"
                       class="figure-img img-fluid rounded object-fit-cover">
-                    <div class="card-body">
-                      <p class="card-text">A Eurostar e320 at St Pancras.
-                        <a href="https://www.seat61.com/trains-and-routes/london-to-paris-by-eurostar.htm"
-                          target="_blank">
-                          More about Eurostar.</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="Albania/Eurostar2.jpg" alt="eurostar e320 first class"
-                      class="figure-img img-fluid rounded object-fit-cover">
-                    <div class="card-body">
-                      <p class="card-text">1st class: Standard Premier or Business Premier.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <a href="Albania/eurostar3-large.jpg" target="_blank">
-                      <img src="Albania/eurostar3.jpg" class="figure-img img-fluid rounded object-fit-cover"
-                        alt=" Eurostar standard seats">
-                    </a>
-                    <div class="card-body">
-                      <p class="card-text">A Eurostar e320 at St Pancras.
-                        Standard class seats.<a href="Albania/eurostar3-large.jpg" target="_blank"> Larger photo</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- CARD 4 -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <a href="images/Albania/eurostar4-large.jpg" target="_blank">
-                      <img src="Albania/eurostar4.jpg" alt="eurostar bar"
-                        class="figure-img img-fluid rounded object-fit-cover">
-                    </a>
-                    <div class="card-body">
-                      <p class="card-text ">One of two cafe-bars, in cars 8 & 9.</p>
-                    </div>
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text ">One of two cafe-bars, in cars 8 & 9.</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- END OF ALBUM SECTION 1 -->
+          <!-- END OF ALBUM SECTION 1 -->
 
-            <h3>
-              Lunch in Paris at the Train Bleu restaurant?
-            </h3>
-            <p>
-              The trains to Italy leave from the magnificent Gare de Lyon in
-              central Paris. Why not have lunch (or at least a drink in the bar)
-              at the fabulous Train Bleu Restaurant inside the Gare de Lyon
-              (pictured above right) before catching the train to Turin or Milan?
-              Paris Gare de Lyon station guide.
-            </p>
+          <h3>
+            Lunch in Paris at the Train Bleu restaurant?
+          </h3>
+          <p>
+            The trains to Italy leave from the magnificent Gare de Lyon in
+            central Paris. Why not have lunch (or at least a drink in the bar)
+            at the fabulous Train Bleu Restaurant inside the Gare de Lyon
+            (pictured above right) before catching the train to Turin or Milan?
+            Paris Gare de Lyon station guide.
+          </p>
 
-            <div class="d-flex justify-content-evenly">
-              <img class="shadow-lg figure-img img-fluid rounded w-100" src="Albania/paris1.jpg" alt="paris station">
-              <img class="shadow-lg figure-img img-fluid rounded flex-shrink-3" src="Albania/paris2.jpg"
+          <div class="row row-cols-sm-2 mt-1">
+            <div class="col card shadow-sm d-flex gap-2">
+              <img class="figure-img img-fluid rounded object-fit-cover" src="Albania/paris1.jpg" alt="paris station">
+            </div>
+
+            <div class="col card shadow-sm d-flex gap-2">
+              <img class="figure-img img-fluid rounded object-fit-cover" src="Albania/paris2.jpg"
                 alt="restaurant in paris">
             </div>
           </div>
+
           <h3>
             2. Paris to Milan by TGV...
           </h3>
@@ -895,7 +986,8 @@
               <img src="Albania/Italy-milan-p-garibaldi.jpg" alt="Garibaldi station">
             </div>
           </div>
-          <p>Arrival at Milan's modern Porta Garibaldi station, an 8-minute €8 taxi ride or 25 minute walk from Milan's
+          <p>Arrival at Milan's modern Porta Garibaldi station, an 8-minute €8 taxi ride or 25 minute walk from
+            Milan's
             main Centrale station.</p>
 
           <!-- ANOTHER HEADING 3 -->
@@ -1002,260 +1094,331 @@
             The GNV ferry Azzurra, one of the ships which operate the Bari-Durres service. Courtesy of Gwylan
             Williams
           </p>
-        </section>
-        <!-- END OF SECTION HOW THE JOURNEY LOOKS LIKE -->
+      </section>
+      <!-- END OF SECTION HOW THE JOURNEY LOOKS LIKE -->
 
 
-        <!-- TRAVELERS REPORT SECTION -->
-        <section class="report">
-          <h2>
-            Traveller's reports...
-          </h2>
-          <div>
+      <!-- TRAVELERS REPORT SECTION -->
+      <section class="report">
+        <h2>
+          Traveller's reports...
+        </h2>
+        <div>
+          <p>
+            <span class="cursive">
+              Traveller Gwylan Williams sailed from Bari to Durres with GNV in 2019:
+            </span>
+            <q>
+              The ferry was very good, and we had a smooth crossing. There were a lot of staff available to
+              help
+              with
+              luggage etc, all in crisp, clean, uniforms. The bunk beds were nice and wide, comfortable and
+              clean,
+              we
+              both slept very well. The en suite shower room was good too, with a decent shower and plenty of
+              hot
+              water. Although the sailing was late at night, there was freshly cooked food available, they
+              seemed
+              geared up to cater for the lorry drivers. Good breakfast too. We couldn't change money for Leks
+              on
+              board
+              but they told us where to go once we landed at Durres and we had a perfectly good exchange rate
+              there.
+            </q>
+          </p>
+          <p class="hore">
+            <a href="#hore">Back to top</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- OVERLAND TRAVEL FROM LONDON TO ALBANIA -->
+      <section class="overland">
+        <div class="d-flex">
+          <img src="Albania/bullet.gif" alt="bulletpoint" class="bullet">
+          <h2>London to Tirane overland</h2>
+        </div>
+        <p>
+          You can also travel overland to Albania, by train from London & Paris to Belgrade, then the spectacular
+          railway from Belgrade to Podgorica or Bar in Montenegro, then by bus or taxi to the border and on to
+          Shkodër,
+          for the daily Albanian train to Tiranë. There may be security concerns in some border areas of Albania, so
+          check the latest Foreign Office travel advice at www.gov.uk/foreign-travel-advice. The overland option
+          generally takes a day or two longer than the more straightforward train & ferry option via Italy, but you
+          can
+          stop off and see some remarkable parts of the Balkans on the way, such as Belgrade and Montenegro. Why not
+          go
+          out by ferry and back overland, or vice versa? Here's how to travel overland:
+        </p>
+        <h2>From London to Tirane</h2>
+        <ul>
+          <li>
+            Step 1, travel from London or Paris to Belgrade as shown on the London to Serbia page. The journey takes
+            2
+            days and 1 night, or 2 nights. Arrange train tickets as shown on that page. Allow at least 2 or 3 hours
+            in
+            Belgrade for onward connections (or stop overnight) as trains may arrive in Belgrade an hour or two
+            late.
+            <span class="cursive">Note that the Zagreb-Belgrade train is still suspended due to Covid-19, Serbia cut
+              off.</span>
+          </li>
+          <li>
+            Step 2, then take a train from Belgrade to Podgorica or Bar in Montenegro over the fabulous Belgrade-Bar
+            railway. There is a choice of daytime train or overnight sleeper train on this route. The daytime train
+            means a long journey but it's a good choice for the fantastic scenery along this remarkable rail line.
+            However, it requires an overnight in Podgorica or Bar. The sleeper train is more time-effective and it
+            puts
+            you in Podgorica or Bar in the morning with time to make your way to Shkodër in Albania that day, and
+            you'll
+            still see the best scenery at the southern end of the line. See the Belgrade to Montenegro page for
+            times,
+            fares, photos & info. You can check train times at the Serbian Railways website www.srbvoz.rs. Buy your
+            ticket at the station.
+          </li>
+          <li>
             <p>
-              <span class="cursive">
-                Traveller Gwylan Williams sailed from Bari to Durres with GNV in 2019:
-              </span>
-              <q>
-                The ferry was very good, and we had a smooth crossing. There were a lot of staff available to
-                help
-                with
-                luggage etc, all in crisp, clean, uniforms. The bunk beds were nice and wide, comfortable and
-                clean,
-                we
-                both slept very well. The en suite shower room was good too, with a decent shower and plenty of
-                hot
-                water. Although the sailing was late at night, there was freshly cooked food available, they
-                seemed
-                geared up to cater for the lorry drivers. Good breakfast too. We couldn't change money for Leks
-                on
-                board
-                but they told us where to go once we landed at Durres and we had a perfectly good exchange rate
-                there.
-              </q>
+              Step 3, you have a choice of going via Bar or Podgorica, as follows:
+            </p>
+            <p>
+              <span class="cursive">Option 1, get off at Podgorica...</span>
+            </p>
+            <p>
+              Buses link Podgorica with Shkoder & Tiranë once or twice a day, try busticket4.me/EN. You get off in
+              Shkoder and take a train from Shkoder to Tiranë if you like, more fun than staying on the bus.
+            </p>
+            <p>
+              Alternatively, take a Montenegrin taxi from Podgorica to the Albanian border at Han i Hot for around
+              €20,
+              cross into Albania, then take an Albanian taxi from Han i Hot to Shkodër for around €20 more. The
+              total
+              distance from Podgorica to Shkodër is 59.7 km, the journey should take about 90 minutes including a
+              change
+              of taxis at the border crossing. Stay overnight in Shkodër. Next day, take a train (if running, see
+              below)
+              to Durrës & Tiranë, see the train timetable section below. Map of Podgorica/Bar/Shkodër area.
+            </p>
+            <p>
+              <span class="cursive">Option 2, get off at Bar...</span>
+            </p>
+            <p>
+              Walk 250m from Bar station to Bar's main bus station. Buses run from Bar to Ulcinj every hour or two
+              from
+              08:50 until 22:45, journey time about half an hour, fare around €2.50. Then there are three buses a
+              day
+              from Ulcinj (Montenegro) to Shkodër via the Muriqan border crossing, departing Ulcinj main bus station
+              at
+              06:00, 12:30 & 16:30, taking an hour, fare around €6, or you can take a taxi from Ulcinj to Shkoder
+              for
+              around €15-€20. You can then stay overnight and take the morning train to Tiranë. Map of
+              Podgorica/Bar/Shkodër area.
+            </p>
+          </li>
+        </ul>
+        <h2>From Tirane to London</h2>
+        <ul class="report">
+          <li>
+            Day 1, take the train from Tiranë & Durrës to Shkodër (if running, see below) and stay overnight. See
+            the
+            train times below.
+          </li>
+          <li>
+            <p>
+              On day 2, you have a choice:
+            </p>
+            <p>
+              <span class="cursive">Option 1</span> is to travel by taxi to Podgorica in Montenegro as follows:
+              Travel
+              by taxi via the Han i Hot border to Podgorica in Montenegro, or travel by bus to Ulcinj then another
+              bus
+              to Bar in Montenegro. If you choose the taxi option, the total journey from Shkodër to Podgorica is
+              59.7
+              km, and should take about 90 minutes including the need to change taxis at the border. Each of the two
+              taxis should cost in the region of €20. Map of Podgorica/Bar/Shkodër area.
+            </p>
+            <p>
+              <span class="cursive">Option 2</span> is travel by bus to Ulcinj in Montenegro then onwards by bus to
+              Bar.
+              There are three buses a day from Shkodër to Ulcinj in Montenegro via the Muriqan border crossing, at
+              the
+              time of writing these were at 09:00, 14:15 & 16:00, fare around €6, journey time around an hour. There
+              are
+              then regular buses from Ulcinj to Bar every hour or two, journey time half an hour, fare around €2.50.
+              Alternatively, a taxi from Shkodër to the border at Muriqan and on to Ulcinj should cost about
+              €15-€20.
+              Map of Podgorica/Bar/Shkodër area.
+            </p>
+          </li>
+          <li>
+            Two daily trains link Bar & Podgorica with Belgrade Topcider station, one a daytime train, the other an
+            overnight sleeper with sleeping-cars and seats, see the Belgrade to Montenegro page for times, fares,
+            photos
+            & info. The sleeper train will save you time as you can leave in the evening of day 2 and arrive in
+            Belgrade
+            on the morning of day 3. But staying overnight and taking the day train is good because of the fantastic
+            scenery along this route (you'd then arrive in the evening of day 3). You can check train times at the
+            Serbian Railways website www.srbvoz.rs, and book the train from Belgrade to Podgorica or Bar at the
+            station.
+          </li>
+          <li>
+            <p> Travel from Belgrade to Paris or London as shown on the London to Serbia page. The journey takes 2
+              days
+              and 1 night, or 2 nights. Arrange train tickets as shown on that page. <span class="cursive"> Note
+                that
+                the Belgrade to Zagreb train is still suspended due to Covid-19, Serbia is cut off.</span>
             </p>
             <p class="hore">
               <a href="#hore">Back to top</a>
             </p>
-          </div>
-        </section>
 
-        <!-- OVERLAND TRAVEL FROM LONDON TO ALBANIA -->
-        <section class="overland">
-          <div class="d-flex">
-            <img src="Albania/bullet.gif" alt="bulletpoint" class="bullet">
-            <h2>London to Tirane overland</h2>
-          </div>
-          <p>
-            You can also travel overland to Albania, by train from London & Paris to Belgrade, then the spectacular
-            railway from Belgrade to Podgorica or Bar in Montenegro, then by bus or taxi to the border and on to
-            Shkodër,
-            for the daily Albanian train to Tiranë. There may be security concerns in some border areas of Albania, so
-            check the latest Foreign Office travel advice at www.gov.uk/foreign-travel-advice. The overland option
-            generally takes a day or two longer than the more straightforward train & ferry option via Italy, but you
-            can
-            stop off and see some remarkable parts of the Balkans on the way, such as Belgrade and Montenegro. Why not
-            go
-            out by ferry and back overland, or vice versa? Here's how to travel overland:
-          </p>
-          <h2>From London to Tirane</h2>
-          <ul>
-            <li>
-              Step 1, travel from London or Paris to Belgrade as shown on the London to Serbia page. The journey takes
-              2
-              days and 1 night, or 2 nights. Arrange train tickets as shown on that page. Allow at least 2 or 3 hours
-              in
-              Belgrade for onward connections (or stop overnight) as trains may arrive in Belgrade an hour or two
-              late.
-              <span class="cursive">Note that the Zagreb-Belgrade train is still suspended due to Covid-19, Serbia cut
-                off.</span>
-            </li>
-            <li>
-              Step 2, then take a train from Belgrade to Podgorica or Bar in Montenegro over the fabulous Belgrade-Bar
-              railway. There is a choice of daytime train or overnight sleeper train on this route. The daytime train
-              means a long journey but it's a good choice for the fantastic scenery along this remarkable rail line.
-              However, it requires an overnight in Podgorica or Bar. The sleeper train is more time-effective and it
-              puts
-              you in Podgorica or Bar in the morning with time to make your way to Shkodër in Albania that day, and
-              you'll
-              still see the best scenery at the southern end of the line. See the Belgrade to Montenegro page for
-              times,
-              fares, photos & info. You can check train times at the Serbian Railways website www.srbvoz.rs. Buy your
-              ticket at the station.
-            </li>
-            <li>
-              <p>
-                Step 3, you have a choice of going via Bar or Podgorica, as follows:
-              </p>
-              <p>
-                <span class="cursive">Option 1, get off at Podgorica...</span>
-              </p>
-              <p>
-                Buses link Podgorica with Shkoder & Tiranë once or twice a day, try busticket4.me/EN. You get off in
-                Shkoder and take a train from Shkoder to Tiranë if you like, more fun than staying on the bus.
-              </p>
-              <p>
-                Alternatively, take a Montenegrin taxi from Podgorica to the Albanian border at Han i Hot for around
-                €20,
-                cross into Albania, then take an Albanian taxi from Han i Hot to Shkodër for around €20 more. The
-                total
-                distance from Podgorica to Shkodër is 59.7 km, the journey should take about 90 minutes including a
-                change
-                of taxis at the border crossing. Stay overnight in Shkodër. Next day, take a train (if running, see
-                below)
-                to Durrës & Tiranë, see the train timetable section below. Map of Podgorica/Bar/Shkodër area.
-              </p>
-              <p>
-                <span class="cursive">Option 2, get off at Bar...</span>
-              </p>
-              <p>
-                Walk 250m from Bar station to Bar's main bus station. Buses run from Bar to Ulcinj every hour or two
-                from
-                08:50 until 22:45, journey time about half an hour, fare around €2.50. Then there are three buses a
-                day
-                from Ulcinj (Montenegro) to Shkodër via the Muriqan border crossing, departing Ulcinj main bus station
-                at
-                06:00, 12:30 & 16:30, taking an hour, fare around €6, or you can take a taxi from Ulcinj to Shkoder
-                for
-                around €15-€20. You can then stay overnight and take the morning train to Tiranë. Map of
-                Podgorica/Bar/Shkodër area.
-              </p>
-            </li>
-          </ul>
-          <h2>From Tirane to London</h2>
-          <ul class="report">
-            <li>
-              Day 1, take the train from Tiranë & Durrës to Shkodër (if running, see below) and stay overnight. See
-              the
-              train times below.
-            </li>
-            <li>
-              <p>
-                On day 2, you have a choice:
-              </p>
-              <p>
-                <span class="cursive">Option 1</span> is to travel by taxi to Podgorica in Montenegro as follows:
-                Travel
-                by taxi via the Han i Hot border to Podgorica in Montenegro, or travel by bus to Ulcinj then another
-                bus
-                to Bar in Montenegro. If you choose the taxi option, the total journey from Shkodër to Podgorica is
-                59.7
-                km, and should take about 90 minutes including the need to change taxis at the border. Each of the two
-                taxis should cost in the region of €20. Map of Podgorica/Bar/Shkodër area.
-              </p>
-              <p>
-                <span class="cursive">Option 2</span> is travel by bus to Ulcinj in Montenegro then onwards by bus to
-                Bar.
-                There are three buses a day from Shkodër to Ulcinj in Montenegro via the Muriqan border crossing, at
-                the
-                time of writing these were at 09:00, 14:15 & 16:00, fare around €6, journey time around an hour. There
-                are
-                then regular buses from Ulcinj to Bar every hour or two, journey time half an hour, fare around €2.50.
-                Alternatively, a taxi from Shkodër to the border at Muriqan and on to Ulcinj should cost about
-                €15-€20.
-                Map of Podgorica/Bar/Shkodër area.
-              </p>
-            </li>
-            <li>
-              Two daily trains link Bar & Podgorica with Belgrade Topcider station, one a daytime train, the other an
-              overnight sleeper with sleeping-cars and seats, see the Belgrade to Montenegro page for times, fares,
-              photos
-              & info. The sleeper train will save you time as you can leave in the evening of day 2 and arrive in
-              Belgrade
-              on the morning of day 3. But staying overnight and taking the day train is good because of the fantastic
-              scenery along this route (you'd then arrive in the evening of day 3). You can check train times at the
-              Serbian Railways website www.srbvoz.rs, and book the train from Belgrade to Podgorica or Bar at the
-              station.
-            </li>
-            <li>
-              <p> Travel from Belgrade to Paris or London as shown on the London to Serbia page. The journey takes 2
-                days
-                and 1 night, or 2 nights. Arrange train tickets as shown on that page. <span class="cursive"> Note
-                  that
-                  the Belgrade to Zagreb train is still suspended due to Covid-19, Serbia is cut off.</span>
-              </p>
-              <p class="hore">
-                <a href="#hore">Back to top</a>
-              </p>
+          </li>
+        </ul>
+      </section>
 
-            </li>
-          </ul>
-        </section>
+      <!-- INLAND TRAVEL IN ALBANIA -->
+      <section id="inland">
+        <div class="overland d-flex">
+          <img src="Albania/bullet.gif" alt="bulletpoint" class="bullet">
+          <h2>Train travel in Albania</h2>
+        </div>
+        <p>
+          Travelling by train in Albania is an experience not to be missed. Second hand coaches from Italy, Austria
+          or
+          Germany hauled by Czech-built diesels clickety-clack across the countryside at about 35 mph (or less!).
+          Don't
+          be surprised by torn seats or broken windows, but then, what do you expect for 50p? You may be able to
+          check
+          these train times at www.hsh.com.al, but please also double-check locally. All trains are one class only.
+        </p>
+        <p class="cursive">
+          <strong>Update 2024:</strong> In December 2023 there appeared to be no trains running at all. The
+          Durres-Kashar line is
+          closed
+          for
+          rebuilding, it partly reopened in late 2023, but seems to have closed again. A Fri/Sat/Sun Durres-Elbasan
+          train is
+          running, but using a station called Plazh near Durres, not Durres station. Check the current situation.
+        </p>
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th colspan="3">
+                Durrës ► Tiranë
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="long-column">
+                Durres
+              </td>
+              <td class="long-column">
+                depart
+              </td>
+              <td class="short-column">
+                -
+              </td>
+            </tr>
+            <tr>
+              <td class="long-column">
+                Kashar
+              </td>
+              <td class="long-column">
+                arrive
+              </td>
+              <td class="short-column">
+                -
+              </td>
+            </tr>
+            <tr>
+              <td class="long-column">
+                Tirane
+              </td>
+              <td class="long-column">
+                arrive
+              </td>
+              <td class="short-column">
+                -
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-        <!-- INLAND TRAVEL IN ALBANIA -->
-        <section id="inland">
-          <div class="overland d-flex">
-            <img src="Albania/bullet.gif" alt="bulletpoint" class="bullet">
-            <h2>Train travel in Albania</h2>
-          </div>
-          <p>
-            Travelling by train in Albania is an experience not to be missed. Second hand coaches from Italy, Austria
-            or
-            Germany hauled by Czech-built diesels clickety-clack across the countryside at about 35 mph (or less!).
-            Don't
-            be surprised by torn seats or broken windows, but then, what do you expect for 50p? You may be able to
-            check
-            these train times at www.hsh.com.al, but please also double-check locally. All trains are one class only.
-          </p>
-          <p class="cursive">
-            <strong>Update 2024:</strong> In December 2023 there appeared to be no trains running at all. The
-            Durres-Kashar line is
-            closed
-            for
-            rebuilding, it partly reopened in late 2023, but seems to have closed again. A Fri/Sat/Sun Durres-Elbasan
-            train is
-            running, but using a station called Plazh near Durres, not Durres station. Check the current situation.
-          </p>
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th colspan="3">
+                Tiranë ► Durrës
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="long-column">
+                Tiranë
+              </td>
+              <td class="long-column">
+                depart
+              </td>
+              <td class="short-column">
+                -
+              </td>
+            </tr>
+            <tr>
+              <td class="long-column">
+                Kashar
+              </td>
+              <td class="long-column">
+                depart
+              </td>
+              <td class="short-column">
+                -
+              </td>
+            </tr>
+            <tr>
+              <td class="long-column">
+                Durrës
+              </td>
+              <td class="long-column">
+                arrive
+              </td>
+              <td class="short-column">
+                -
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <p> Kashar station is 7.6 km from central Tiranë, local city buses available.</p>
+
+        <p>
+          In 2015 a new service started between Durres & Kashar, 7.6 km from Tiranë. The old station in Tiranë
+          was
+          closed in
+          September 2013 and since then there have been no trains at all between Durrës & Tiranë. But from 26
+          May
+          2015 a service
+          resumed between Durres and a station on the outskirts of Tiranë called Kashar, details shown here. In
+          the
+          longer term a
+          new Tiranë station is allegedly being built, allegedly near the Hygeia Hospital, <a
+            href="https://www.google.com/maps/search/Tirana,+hygeia+hospital/@41.344949,19.7805257,11671m/data=!3m1!1e3?hl=en"
+            target="_blank">see this map</a>. If you have any more
+          details, please email me.
+          <span class="cursive">There were previously 7 or more daily trains in each direction between Durres
+            and
+            Tiranë, the
+            service shown here follows the fuel shortages and reduction in service. On a good day you can find
+            the
+            latest timetable
+            at </span> <a href="http://hsh.com.al">http://hsh.com.al.</a>
+        </p>
+        <div class="table-wrapper">
           <table class="content-table">
             <thead>
               <tr>
                 <th colspan="3">
-                  Durrës ► Tiranë
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="long-column">
-                  Durres
-                </td>
-                <td class="long-column">
-                  depart
-                </td>
-                <td class="short-column">
-                  -
-                </td>
-              </tr>
-              <tr>
-                <td class="long-column">
-                  Kashar
-                </td>
-                <td class="long-column">
-                  arrive
-                </td>
-                <td class="short-column">
-                  -
-                </td>
-              </tr>
-              <tr>
-                <td class="long-column">
-                  Tirane
-                </td>
-                <td class="long-column">
-                  arrive
-                </td>
-                <td class="short-column">
-                  -
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table class="content-table">
-            <thead>
-              <tr>
-                <th colspan="3">
-                  Tiranë ► Durrës
+                  Tiranë & Durrës ► Shkodër
                 </th>
               </tr>
             </thead>
@@ -1273,7 +1436,107 @@
               </tr>
               <tr>
                 <td class="long-column">
-                  Kashar
+                  Durrës
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Vorë
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Vorë
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Milot
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Shkodër
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th colspan="3">
+                  Shkodër ► Durrës & Tiranë
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="long-column">
+                  Shkodër
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Milot
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Vorë
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Vorë
                 </td>
                 <td class="long-column">
                   depart
@@ -1293,617 +1556,432 @@
                   -
                 </td>
               </tr>
+              <tr>
+                <td class="long-column">
+                  Tiranë
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrapper">
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th colspan="3">
+                  Tiranë & Durrës ► Vlorë & Elbasan
+                </th>
+              </tr>
+              <tr>
+                <th colspan="2" class="table-subheading">
+                  Days of operation:
+                </th>
+                <th class="table-subheading">
+                  Sat & Sun
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="long-column">
+                  Durrës
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Plazh (2.7 km from Durrës)
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  14:00
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Rrogozhinë
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  15:12
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Rrogozhinë
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  15:13
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Elbasan
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  16:50
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Librazhd
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Pogradec*
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Lushnjë
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Fier
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Vlorë
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
             </tbody>
           </table>
 
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th colspan="3">
+                  Elbasan & Vlorë ► Durrës & Tiranë
+                </th>
+              </tr>
+              <tr>
+                <th colspan="2" class="table-subheading">
+                  Days of operation:
+                </th>
+                <th class="table-subheading">
+                  Fri,Sat & Sun
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="long-column">
+                  Vlorë
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Fier
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Lushnjë
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Pogradec*
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Librazhd
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Elbasan
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  06:30
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Rrogozhinë
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  08:07
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Rrogozhinë
+                </td>
+                <td class="long-column">
+                  depart
+                </td>
+                <td class="short-column">
+                  08:08
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Plazh (2.7 km from Durrës)
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  09:20
+                </td>
+              </tr>
+              <tr>
+                <td class="long-column">
+                  Durrës
+                </td>
+                <td class="long-column">
+                  arrive
+                </td>
+                <td class="short-column">
+                  -
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          * = There have been no trains to or from Pogradec since 2012.
+        </p>
 
-          <p> Kashar station is 7.6 km from central Tiranë, local city buses available.</p>
-
+        <div class="fares">
+          <h2>Fares and how to buy tickets...</h2>
           <p>
-            In 2015 a new service started between Durres & Kashar, 7.6 km from Tiranë. The old station in Tiranë
-            was
-            closed in
-            September 2013 and since then there have been no trains at all between Durrës & Tiranë. But from 26
-            May
-            2015 a service
-            resumed between Durres and a station on the outskirts of Tiranë called Kashar, details shown here. In
-            the
-            longer term a
-            new Tiranë station is allegedly being built, allegedly near the Hygeia Hospital, <a
-              href="https://www.google.com/maps/search/Tirana,+hygeia+hospital/@41.344949,19.7805257,11671m/data=!3m1!1e3?hl=en"
-              target="_blank">see this map</a>. If you have any more
-            details, please email me.
-            <span class="cursive">There were previously 7 or more daily trains in each direction between Durres
-              and
-              Tiranë, the
-              service shown here follows the fuel shortages and reduction in service. On a good day you can find
-              the
-              latest timetable
-              at </span> <a href="http://hsh.com.al">http://hsh.com.al.</a>
-          </p>
-          <div class="table-wrapper">
-            <table class="content-table">
-              <thead>
-                <tr>
-                  <th colspan="3">
-                    Tiranë & Durrës ► Shkodër
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="long-column">
-                    Tiranë
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Durrës
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Vorë
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Vorë
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Milot
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Shkodër
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table class="content-table">
-              <thead>
-                <tr>
-                  <th colspan="3">
-                    Shkodër ► Durrës & Tiranë
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="long-column">
-                    Shkodër
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Milot
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Vorë
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Vorë
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Durrës
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Tiranë
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table-wrapper">
-            <table class="content-table">
-              <thead>
-                <tr>
-                  <th colspan="3">
-                    Tiranë & Durrës ► Vlorë & Elbasan
-                  </th>
-                </tr>
-                <tr>
-                  <th colspan="2" class="table-subheading">
-                    Days of operation:
-                  </th>
-                  <th class="table-subheading">
-                    Sat & Sun
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="long-column">
-                    Durrës
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Plazh (2.7 km from Durrës)
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    14:00
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Rrogozhinë
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    15:12
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Rrogozhinë
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    15:13
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Elbasan
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    16:50
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Librazhd
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Pogradec*
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Lushnjë
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Fier
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Vlorë
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table class="content-table">
-              <thead>
-                <tr>
-                  <th colspan="3">
-                    Elbasan & Vlorë ► Durrës & Tiranë
-                  </th>
-                </tr>
-                <tr>
-                  <th colspan="2" class="table-subheading">
-                    Days of operation:
-                  </th>
-                  <th class="table-subheading">
-                    Fri,Sat & Sun
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="long-column">
-                    Vlorë
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Fier
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Lushnjë
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Pogradec*
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Librazhd
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Elbasan
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    06:30
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Rrogozhinë
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    08:07
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Rrogozhinë
-                  </td>
-                  <td class="long-column">
-                    depart
-                  </td>
-                  <td class="short-column">
-                    08:08
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Plazh (2.7 km from Durrës)
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    09:20
-                  </td>
-                </tr>
-                <tr>
-                  <td class="long-column">
-                    Durrës
-                  </td>
-                  <td class="long-column">
-                    arrive
-                  </td>
-                  <td class="short-column">
-                    -
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p>
-            * = There have been no trains to or from Pogradec since 2012.
+            Fares are incredibly cheap. Durrës to Kashar one-way costs 70 Lek, or about 50p, with the
+            city
+            bus between Kashar and
+            central Tiranë costing an extra 30 Lek. Durrës to Shkodër is 160 Lek, about £1. Tickets are
+            not
+            sold in advance, only
+            for the next train.
           </p>
 
-          <div class="fares">
-            <h2>Fares and how to buy tickets...</h2>
-            <p>
-              Fares are incredibly cheap. Durrës to Kashar one-way costs 70 Lek, or about 50p, with the
-              city
-              bus between Kashar and
-              central Tiranë costing an extra 30 Lek. Durrës to Shkodër is 160 Lek, about £1. Tickets are
-              not
-              sold in advance, only
-              for the next train.
-            </p>
-
-            <h2>What are Albanian trains like</h2>
+          <h2>What are Albanian trains like</h2>
 
 
-            <!--1 PHOTO + TEXT  -->
+          <!--1 PHOTO + TEXT  -->
+          <div class="col card shadow-sm d-flex gap-2">
+            <img src="Albania/Albania-train-2014.jpg" alt="Train in Albania">
+          </div>
+          <p>
+            Trains offer one class only. Most are composed of second-hand German suburban carriages like
+            these. Photos courtesy of
+            Philip Dyer-Perry.
+          </p>
+          <!-- 2 PHOTOS + TEXT -->
+          <div class="row row-cols-sm-2 mt-1">
             <div class="col card shadow-sm d-flex gap-2">
-              <img src="Albania/Albania-train-2014.jpg" alt="Train in Albania">
+              <img src="Albania/Albania-train-seats.jpg" alt="Albania seats" class="shadow">
             </div>
-            <p>
-              Trains offer one class only. Most are composed of second-hand German suburban carriages like
-              these. Photos courtesy of
-              Philip Dyer-Perry.
-            </p>
-            <!-- 2 PHOTOS + TEXT -->
-            <div class="row row-cols-sm-2 mt-1">
-              <div class="col card shadow-sm d-flex gap-2">
-                <img src="Albania/Albania-train-seats.jpg" alt="Albania seats" class="shadow">
-              </div>
-              <div class="col card shadow-sm d-flex gap-2">
-                <img src="Albania/Albania-intercity-poster.jpg" alt="Albania intercity poster" class="shadow">
-              </div>
+            <div class="col card shadow-sm d-flex gap-2">
+              <img src="Albania/Albania-intercity-poster.jpg" alt="Albania intercity poster" class="shadow">
             </div>
-            <p>The cars are grubby but perfectly comfortable. Above right, an
-              Albanian
-              Railways poster at Shkodër, showing a British
-              Rail InterCity 125...
-            </p>
           </div>
-        </section>
-
-        <section>
-          <div class="overland d-flex">
-            <img src="Albania/bullet.gif" alt="bulletpoint" class="bullet">
-            <h2>International links from Albania...</h2>
-          </div>
-          <p>There are no international trains to or from Albania, but here's how to travel to or from
-            neighbouring
-            countries by bus,
-            taxi or ferry...</p>
-          <h2>
-            Travelling from Tiranë to Bar (Montenegro), Podgorica (Montenegro) & Belgrade (Serbia)
-          </h2>
-          <ul>
-            <li>
-              <p>
-                Day 1, take the afternoon train from Tiranë to Shkodër and stay overnight. <a href="#inland">See
-                  the
-                  train
-                  times above.</a> Take a bus if the
-                train isn't running.
-              </p>
-            </li>
-            <li>
-              <p>
-                On day 2, you have two options: Travel by taxi via the Han i Hot border to Podgorica in
-                Montenegro, or
-                travel by bus to
-                Ulcinj then another bus to Bar in Montenegro.
-              </p>
-              <p class="second">
-                If you choose the taxi option, the total journey from Shkodër to Podgorica is 59.7 km, and should
-                take
-                about 90 minutes
-                including the need to change taxis at the border. Each of the two taxis should cost in the region
-                of
-                €20.
-              </p>
-              <p class="second">
-                If you choose the bus option, there are three buses a day from Shkodër to Ulcinj in Montenegro via
-                the
-                Muriqan border
-                crossing, at the time of writing these were 09:00, 14:15 & 16:00 (in the other direction, buses
-                leave
-                Ulcinj for Shkodër
-                at 06:00, 12:30 & 16:30). There are then reasonably frequent buses from Ulcinj to Bar.
-              </p>
-              <p class="second">
-                Alternatively, a taxi from Shkodër to the border at Muriqan should cost about €10-€15, and a taxi
-                from
-                Muriqan to Ulcinj
-                around €20-€25.
-              </p>
-            </li>
-            <li>
-              <p>
-                Two daily trains link Bar & Podgorica with Belgrade, one a daytime train, the other an overnight
-                sleeper
-                with
-                sleeping-cars and seats. The sleeper train will save you time as you can leave in the evening of
-                day 2
-                and
-                arrive in
-                Belgrade on the morning of day 3. But staying the evening of day 3).
-              </p>
-            </li>
-            <li>
-              <p>
-                International trains link Belgrade with Budapest, Vienna, Zagreb, Bucharest and many other
-                European
-                destinations, see
-                the international trains from Belgrade page or use the journey planner at www.bahn.de to find
-                train
-                times.
-              </p>
-            </li>
-            <li>
-              <p>
-                In the other direction for travel <em>to</em> Albania, simply reverse the steps shown above.
-              </p>
-            </li>
-          </ul>
-      </article>
-    </main>
-
-    <!-- **************************FOOTER************************************************************ -->
-
-
-    <footer class="post-footer">
-      <h2>About author</h2>
-      <h4><a href="">Patrik Kusnir</a></h4>
-      <div class="byline">
-        <a href="#" class="photo">
-          <img src="Albania/author.jpg" alt="Patrik Kusnir" class="author-photo">
-        </a>
-
-        <div class="bio">
-          <p>
-            <strong>Patrik Kusnir</strong> is graduated pharmacist whose the biggest passion is travelling by
-            train.
-          </p>
-          <p>
-            This blog has been written as my first project during my long self-taught programmer learning path.
-          </p>
-          <p>
-            I hope you will find a lot of useful information here :) <br>
-            Cheers.
+          <p>The cars are grubby but perfectly comfortable. Above right, an
+            Albanian
+            Railways poster at Shkodër, showing a British
+            Rail InterCity 125...
           </p>
         </div>
-      </div>
-    </footer>
+      </section>
+
+      <section>
+        <div class="overland d-flex">
+          <img src="Albania/bullet.gif" alt="bulletpoint" class="bullet">
+          <h2>International links from Albania...</h2>
+        </div>
+        <p>There are no international trains to or from Albania, but here's how to travel to or from
+          neighbouring
+          countries by bus,
+          taxi or ferry...</p>
+        <h2>
+          Travelling from Tiranë to Bar (Montenegro), Podgorica (Montenegro) & Belgrade (Serbia)
+        </h2>
+        <ul>
+          <li>
+            <p>
+              Day 1, take the afternoon train from Tiranë to Shkodër and stay overnight. <a href="#inland">See
+                the
+                train
+                times above.</a> Take a bus if the
+              train isn't running.
+            </p>
+          </li>
+          <li>
+            <p>
+              On day 2, you have two options: Travel by taxi via the Han i Hot border to Podgorica in
+              Montenegro, or
+              travel by bus to
+              Ulcinj then another bus to Bar in Montenegro.
+            </p>
+            <p class="second">
+              If you choose the taxi option, the total journey from Shkodër to Podgorica is 59.7 km, and should
+              take
+              about 90 minutes
+              including the need to change taxis at the border. Each of the two taxis should cost in the region
+              of
+              €20.
+            </p>
+            <p class="second">
+              If you choose the bus option, there are three buses a day from Shkodër to Ulcinj in Montenegro via
+              the
+              Muriqan border
+              crossing, at the time of writing these were 09:00, 14:15 & 16:00 (in the other direction, buses
+              leave
+              Ulcinj for Shkodër
+              at 06:00, 12:30 & 16:30). There are then reasonably frequent buses from Ulcinj to Bar.
+            </p>
+            <p class="second">
+              Alternatively, a taxi from Shkodër to the border at Muriqan should cost about €10-€15, and a taxi
+              from
+              Muriqan to Ulcinj
+              around €20-€25.
+            </p>
+          </li>
+          <li>
+            <p>
+              Two daily trains link Bar & Podgorica with Belgrade, one a daytime train, the other an overnight
+              sleeper
+              with
+              sleeping-cars and seats. The sleeper train will save you time as you can leave in the evening of
+              day 2
+              and
+              arrive in
+              Belgrade on the morning of day 3. But staying the evening of day 3).
+            </p>
+          </li>
+          <li>
+            <p>
+              International trains link Belgrade with Budapest, Vienna, Zagreb, Bucharest and many other
+              European
+              destinations, see
+              the international trains from Belgrade page or use the journey planner at www.bahn.de to find
+              train
+              times.
+            </p>
+          </li>
+          <li>
+            <p>
+              In the other direction for travel <em>to</em> Albania, simply reverse the steps shown above.
+            </p>
+          </li>
+        </ul>
+    </article>
+  </main>
+
+  <!-- **************************FOOTER************************************************************ -->
 
 
-    <!-- <div class="post-content">
+  <footer class="post-footer">
+    <h2>About author</h2>
+    <h4><a href="">Patrik Kusnir</a></h4>
+    <div class="byline">
+      <a href="#" class="photo">
+        <img src="Albania/author.jpg" alt="Patrik Kusnir" class="author-photo">
+      </a>
+    </div>
+  </footer>
+
+
+  <!-- <div class="post-content">
          <p>Moje meno je Patrik Kušnír a mojou vášňou je aj okrem iného cestovanie vlakom po rôznych krajinách.
     Práve preto som sa rozhodol vytvoriť tento blog. Tento blog je teda o cestovani vlakom. Na ľavej strane si
     môžete
     vybrať krajinu, o ktorej sa chcete viacej dozvedieť. </p>
       </div> -->
 
-    <!-- MAIN MENU 
+  <!-- MAIN MENU 
 <body>
   <header>
     <div class="top-menu-div">
@@ -1960,7 +2038,7 @@
 </header>
 -->
 
-    <!--
+  <!--
     <p><a href="albansko.html">Albansko</a> <img src="images/al.png" alt="Albania"></p>
     <p><a href="albansko.html">Albansko</a> <img src="images/al.png" alt="Albania"></p>
     <p><a href="albansko.html">Albansko</a> <img src="images/al.png" alt="Albania"></p>
@@ -1974,56 +2052,58 @@
     <p><a href="albansko.html">Albansko</a> <img src="images/al.png" alt="Albania"></p>
     </div>
 -->
-    <aside class="pre-footer">
-      <ul class="reviews">
-        <li>
-          <blockquote>
-            If art is to have a special train, the critic must keep some seats
-            reserved on it
-          </blockquote>
-          <p class="review-byline">
-            Oscar Wilde, ‘The Artist As Critic: Critical Writings Of Oscar
-            Wilde’ (1969)
-          </p>
-        </li>
-        <li>
-          <blockquote>
-            Trains are wonderful.... To travel by train is to see nature and
-            human beings, towns and churches, and rivers, in fact, to see life.
-          </blockquote>
-          <p class="review-byline">Agatha Christie</p>
-        </li>
-        <li>
-          <blockquote>
-            Many times the wrong train took me to the right place.
-          </blockquote>
-          <p class="review-byline">Paulo Coelho</p>
-        </li>
-        <li>
-          <blockquote>
-            Trains are beautiful. They take people to places they've never been,
-            faster than they could ever go themselves. Everyone who works on
-            trains knows they have personalities, they're like people. They have
-            their own mysteries.
-          </blockquote>
-          <p class="review-byline">Sam Starbuck, ‘The Dead Isle’</p>
-        </li>
-      </ul>
-    </aside>
+  <aside class="pre-footer">
+    <ul class="reviews">
+      <li>
+        <blockquote>
+          If art is to have a special train, the critic must keep some seats
+          reserved on it
+        </blockquote>
+        <p class="review-byline">
+          Oscar Wilde, ‘The Artist As Critic: Critical Writings Of Oscar
+          Wilde’ (1969)
+        </p>
+      </li>
+      <li>
+        <blockquote>
+          Trains are wonderful.... To travel by train is to see nature and
+          human beings, towns and churches, and rivers, in fact, to see life.
+        </blockquote>
+        <p class="review-byline">Agatha Christie</p>
+      </li>
+      <li>
+        <blockquote>
+          Many times the wrong train took me to the right place.
+        </blockquote>
+        <p class="review-byline">Paulo Coelho</p>
+      </li>
+      <li>
+        <blockquote>
+          Trains are beautiful. They take people to places they've never been,
+          faster than they could ever go themselves. Everyone who works on
+          trains knows they have personalities, they're like people. They have
+          their own mysteries.
+        </blockquote>
+        <p class="review-byline">Sam Starbuck, ‘The Dead Isle’</p>
+      </li>
+    </ul>
+  </aside>
 
-    <footer class="global-footer">
-      made by Patrik &nbsp;&nbsp; &copy; 2022-2024
-    </footer>
+  <footer class="global-footer">
+    made by Patrik &nbsp;&nbsp; &copy; 2022-2024
+  </footer>
   </div>
 
-  <!-- SCRIPTS - JAVASCRIPT, BOOTSTRAP, JQUERY -->
-  <script src="../index.js"></script>
+  <!-- SCRIPTS - JAVASCRIPT, BOOTSTRAP, JQUERY, FLICKITY -->
   <script type="text/javascript" src="../jquery-3.7.1.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="../index.js"></script>
+
 </body>
 
 </html>
