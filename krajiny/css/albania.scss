@@ -43,8 +43,7 @@ body {
     color: #222;
     font: 125%/1.5em;
     margin: 0;
-    // max-width: 75em;
-    // padding: 3em;
+    scroll-behavior: smooth;
 }
 
 
@@ -102,6 +101,10 @@ h2 {
 main {
     padding: 2.5em;
     text-shadow: 0 2px 0 rgb(255 255 255/70%);
+}
+
+#full-article {
+    display: none;
 }
 
 .container>header {
@@ -368,6 +371,20 @@ main {
 .page-right .text p {
     color: #555;
     line-height: 1.7;
+
+}
+
+.page-right .text p:last-child,
+#show-less {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.page-right .text p a,
+#show-less {
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
 }
 
 // .page-right .slider-wrap {
@@ -607,6 +624,12 @@ section li  {
 
 .byline h3 a {
     color: #222;
+}
+
+
+.aboutme p {
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .statue {
@@ -1028,7 +1051,7 @@ main h3 {
 }
 
 .table-wrapper {
-    display: inline-flex;
+    display: flex;
     margin: 0 auto;
 }
 
