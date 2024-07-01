@@ -81,10 +81,10 @@
           <a href="#">Train travel</a>
         </div>
         <div class="burger">
-          <span> </span>
+          <span></span>
         </div>
       </header>
-      <div class="menu">
+      <nav class="menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#aboutme">About me</a></li>
@@ -92,7 +92,7 @@
           <li><a href="#">Shop</a></li>
           <li><a href="#">Get in touch</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="page">
         <div class="page-left">
           <div class="main-carousel">
@@ -112,12 +112,7 @@
             <div class="title">
               <h1>Albania</h1>
             </div>
-            <!-- <div class="save">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-            </svg>
-          </div> -->
+
           </div>
           <div class="user-wrap" data-aos="zoom-in">
             <div class="user">
@@ -133,7 +128,6 @@
             </div>
           </div>
           <div class="text-wrap" data-aos="fade-up">
-            <div class="text">
               <p>
                 Albania, known to Albanians as Shqipëria or Land of the Eagles,
                 was once Europe's most mysterious country. A Stalinist
@@ -146,7 +140,6 @@
                 a fascinating country that will challenge your pre-conceptions
                 of things Albanian.
               </p>
-            </div>
           </div>
           <div class="slider-wrap">
             <div class="slider">
@@ -474,18 +467,16 @@
                 </p>
               </div>
               <!-- TO CREATE FIGURE and FIGURE CAPTIONS INSTEAD OF IMAGES -->
-              <div class="image-content">
-                <div class="col card shadow-sm d-flex gap-2">
+              <figure class="image-content col card shadow-sm d-flex gap-2 no-border">
                   <img
                     src="Albania/Albania-Skenderbeg.jpg"
                     alt="Albania-Skenderbeg"
                   />
-                </div>
-                <p>
+                  <figurecaption>
                   The statue of Skënderbeg, Albania's national hero, in
                   Skënderbeg Square in Tiranë
-                </p>
-              </div>
+                </figurecaption>
+              </figure>
             </div>
           </section>
           <section>
@@ -805,13 +796,13 @@
                 <div class="row row-cols-sm-2 row-cols-md-2 g-3">
                   <!-- CARD 1 -->
                   <div class="col">
-                    <div class="card shadow-sm">
+                    <figure class="card shadow-sm no-border">
                       <img
                         src="Albania/Eurostar1.jpg"
                         alt="Eurostar e320"
                         class="figure-img img-fluid rounded object-fit-cover"
                       />
-                      <div class="card-body">
+                      <figcaption class="card-body">
                         <p class="card-text">
                           A Eurostar e320 at St Pancras.
                           <a
@@ -821,29 +812,29 @@
                             More about Eurostar.</a
                           >
                         </p>
-                      </div>
-                    </div>
+                      </figcaption>
+                    </figure>
                   </div>
 
                   <!-- CARD 2 -->
                   <div class="col">
-                    <div class="card shadow-sm">
+                    <figure class="card shadow-sm no-border">
                       <img
                         src="Albania/Eurostar2.jpg"
                         alt="eurostar e320 first class"
                         class="figure-img img-fluid rounded object-fit-cover"
                       />
-                      <div class="card-body">
+                      <figurecaption class="card-body">
                         <p class="card-text">
                           1st class: Standard Premier or Business Premier.
                         </p>
-                      </div>
-                    </div>
+                      </figurecaption>
+                    </figure>
                   </div>
 
                   <!-- CARD 3 -->
                   <div class="col">
-                    <div class="card shadow-sm">
+                    <figure class="card shadow-sm no-border">
                       <a href="Albania/eurostar3-large.jpg" target="_blank">
                         <img
                           src="Albania/eurostar3.jpg"
@@ -851,21 +842,22 @@
                           alt=" Eurostar standard seats"
                         />
                       </a>
-                      <div class="card-body">
+                      <figurecaption class="card-body">
                         <p class="card-text">
-                          A Eurostar e320 at St Pancras. Standard class seats.<a
+                          A Eurostar e320 at St Pancras. Standard class seats.
+                          <br>
+                          <a
                             href="Albania/eurostar3-large.jpg"
                             target="_blank"
-                          >
-                            Larger photo</a
-                          >
+                          >Larger photo
+                          </a>
                         </p>
-                      </div>
-                    </div>
+                      </figurecaption>
+                    </figure>
                   </div>
                   <!-- CARD 4 -->
                   <div class="col">
-                    <div class="card shadow-sm">
+                    <figure class="card shadow-sm no-border">
                       <a
                         href="images/Albania/eurostar4-large.jpg"
                         target="_blank"
@@ -876,12 +868,12 @@
                           class="figure-img img-fluid rounded object-fit-cover"
                         />
                       </a>
-                      <div class="card-body">
+                      <figurecaption class="card-body">
                         <p class="card-text">
                           One of two cafe-bars, in cars 8 & 9.
                         </p>
-                      </div>
-                    </div>
+                      </figurecaption>
+                    </figure>
                   </div>
                 </div>
               </div>
@@ -896,22 +888,26 @@
               (pictured above right) before catching the train to Turin or
               Milan? Paris Gare de Lyon station guide.
             </p>
-
-            <div class="row row-cols-sm-2 mt-1">
-              <div class="col card shadow-sm d-flex gap-2">
-                <img
+            <div class="container mt-4">
+              <div class="row row-cols-sm-2 mt-1 no-border">
+                <div class="col card shadow-sm d-flex gap-2">
+                  <div class="card-img-container">
+                    <img
                   class="figure-img img-fluid rounded object-fit-cover"
                   src="Albania/paris1.jpg"
                   alt="paris station"
                 />
-              </div>
-
-              <div class="col card shadow-sm d-flex gap-2">
-                <img
+                  </div>
+                </div>
+                <div class="col card shadow-sm d-flex gap-2">
+                  <div class="card-img-container">
+                    <img
                   class="figure-img img-fluid rounded object-fit-cover"
                   src="Albania/paris2.jpg"
                   alt="restaurant in paris"
                 />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1883,7 +1879,6 @@
       <!-- to rename footer to div -->
       <aside class="post-footer">
         <h2>About author</h2>
-        <!-- change h4 -->
         <h3><a href="">Patrik Kusnir</a></h3>
         <div class="byline">
           <a href="#" class="photo">
@@ -1935,12 +1930,45 @@
         </div>
       </aside>
 
-      <!-- <div class="post-content">
-         <p>Moje meno je Patrik Kušnír a mojou vášňou je aj okrem iného cestovanie vlakom po rôznych krajinách.
-    Práve preto som sa rozhodol vytvoriť tento blog. Tento blog je teda o cestovani vlakom. Na ľavej strane si
-    môžete
-    vybrať krajinu, o ktorej sa chcete viacej dozvedieť. </p>
-      </div> -->
+      <aside class="pre-footer">
+        <ul class="reviews">
+          <li>
+            <blockquote>
+              If art is to have a special train, the critic must keep some seats
+              reserved on it
+            </blockquote>
+            <p class="review-byline">
+              Oscar Wilde, ‘The Artist As Critic: Critical Writings Of Oscar
+              Wilde’ (1969)
+            </p>
+          </li>
+          <li>
+            <blockquote>
+              Trains are wonderful.... To travel by train is to see nature and
+              human beings, towns and churches, and rivers, in fact, to see
+              life.
+            </blockquote>
+            <p class="review-byline">Agatha Christie</p>
+          </li>
+          <li>
+            <blockquote>
+              Many times the wrong train took me to the right place.
+            </blockquote>
+            <p class="review-byline">Paulo Coelho</p>
+          </li>
+          <li>
+            <blockquote>
+              Trains are beautiful. They take people to places they've never
+              been, faster than they could ever go themselves. Everyone who
+              works on trains knows they have personalities, they're like
+              people. They have their own mysteries.
+            </blockquote>
+            <p class="review-byline">Sam Starbuck, ‘The Dead Isle’</p>
+          </li>
+        </ul>
+      </aside>
+
+
 
       <!-- MAIN MENU 
 <body>
@@ -2013,43 +2041,7 @@
     <p><a href="albansko.html">Albansko</a> <img src="images/al.png" alt="Albania"></p>
     </div>
 -->
-      <aside class="pre-footer">
-        <ul class="reviews">
-          <li>
-            <blockquote>
-              If art is to have a special train, the critic must keep some seats
-              reserved on it
-            </blockquote>
-            <p class="review-byline">
-              Oscar Wilde, ‘The Artist As Critic: Critical Writings Of Oscar
-              Wilde’ (1969)
-            </p>
-          </li>
-          <li>
-            <blockquote>
-              Trains are wonderful.... To travel by train is to see nature and
-              human beings, towns and churches, and rivers, in fact, to see
-              life.
-            </blockquote>
-            <p class="review-byline">Agatha Christie</p>
-          </li>
-          <li>
-            <blockquote>
-              Many times the wrong train took me to the right place.
-            </blockquote>
-            <p class="review-byline">Paulo Coelho</p>
-          </li>
-          <li>
-            <blockquote>
-              Trains are beautiful. They take people to places they've never
-              been, faster than they could ever go themselves. Everyone who
-              works on trains knows they have personalities, they're like
-              people. They have their own mysteries.
-            </blockquote>
-            <p class="review-byline">Sam Starbuck, ‘The Dead Isle’</p>
-          </li>
-        </ul>
-      </aside>
+      
 
       <footer class="global-footer">
         made by Patrik &nbsp;&nbsp; &copy; 2022-2024

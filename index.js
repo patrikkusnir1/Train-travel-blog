@@ -22,7 +22,7 @@ var flkty = new Flickity(elem, {
 // Burger menu functionality
 const burger = document.querySelector(".burger");
 const logo = document.querySelector(".logo a");
-const menu = document.querySelector(".menu");
+const menu = document.querySelector("nav");
 const pageLeft = document.querySelector("page-left");
 
 burger.addEventListener("click", function () {
@@ -48,13 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
   let fullArticle = document.getElementById("full-article");
   let showLessLink = document.getElementById("show-less");
   let introText = document.getElementById("intro-text");
+  let postFooter = document.querySelector(".post-footer");
+  let preFooter = document.querySelector(".pre-footer");
+  let footer = document.querySelector("footer");
+
   let previousScrollPosition = 0;
 
   if (readMoreLink && fullArticle && showLessLink && introText) {
     readMoreLink.addEventListener("click", function (e) {
       e.preventDefault();
       previousScrollPosition = window.scrollY;
+
       fullArticle.style.display = "block";
+      postFooter.style.display = "block";
+      preFooter.style.display = "block";
+      footer.style.display = "block";
+
       introText.style.display = "none";
       window.scrollTo({
         top: fullArticle.offsetTop,
@@ -65,6 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
     showLessLink.addEventListener("click", function (e) {
       e.preventDefault();
       fullArticle.style.display = "none";
+      postFooter.style.display = "none";
+      preFooter.style.display = "none";
+      footer.style.display = "none";
       introText.style.display = "block";
       window.scrollTo({
         top: previousScrollPosition,

@@ -26,18 +26,7 @@ section li {
     padding: 0;
 }
 
-.post-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-}
+
 
 body {
     color: #222;
@@ -45,52 +34,6 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
-
-
-
-
-
-// .sentence {
-//     font-size: clamp(1.5rem, calc(1rem + 3vw), 4rem);
-//     overflow: visible;
-//     padding: 0.5em;
-//     display: inline-block;
-
-
-//     .letter {
-//         opacity: 0;
-//         transform: translateY(-0.10em);
-//         display: inline-block;
-//         animation: burst_in 3s cubic-bezier(0, 1.62, 1, 1.6) forwards;
-//         color: #101820;
-
-
-//         @for $i from 1 through $sentenceLength {
-//             &:nth-of-type(#{$i}) {
-//                 animation-delay: $i * $i * 0.02s;
-//             }
-//         }
-//     }
-// }
-
-// @keyframes burst_in {
-//     0% {
-//         opacity: 0;
-//         transform: translateY(-0.25em);
-//     }
-
-//     25%,
-//     80% {
-//         opacity: 1;
-//         transform: translateY(0);
-//     }
-
-//     100% {
-//         opacity: 1;
-//         transform: translateY(0);
-//     }
-// }
-
 
 h2 {
     font-size: 1.4em;
@@ -103,38 +46,49 @@ main {
     text-shadow: 0 2px 0 rgb(255 255 255/70%);
 }
 
-#full-article {
+#full-article,
+.post-footer,
+.pre-footer,
+footer {
     display: none;
 }
 
-.container>header {
-    margin: 0.625em;
-    padding: 1.25em 0.625em 0.625em 0.625em;
-    // display: block;
-    text-shadow: 1px 1px 1px rgb(0 0 0/20%);
-    text-align: center;
+.no-border {
+    border: none;
+    box-shadow: none;
 }
 
-.container>header h1 {
-    font-size: 3em;
-    line-height: 2.375em;
-    margin: 0;
-    font-weight: 300;
-    text-shadow: 0 1px 1px rgb(255 255 255/60%);
-    letter-spacing: 0.1041666666666667em;
+.card-img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
-.container>header h2 {
-    font-size: 1em;
-    font-weight: 300;
-    margin: 0;
-    padding: 0.9375em 0 0.3125em 0;
-    color: #666;
-    font-family: Cambria, Georgia, serif;
-    font-style: italic;
-    text-shadow: 0 1px 1px rgb(255 255 255/60%);
 
+// logo name and burger
+.post-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
 }
+// Logo a - Train travel + active version
 
 .post-header .logo a {
     font-size: 20px;
@@ -142,24 +96,13 @@ main {
     color: #000;
     font-weight: 700;
     transition: .2s ease;
-    // display: block;
-    // height: 8.928571428571429em;
-    // text-indent: -9999em;
-    // margin: 0 auto;
-    // // background: url(logo.png) no-repeat center center;
-    // background-color: #f0f0f0;
-    // width: 100%;
+
+    &.active {
+        color: #fff;
+    }
 }
 
-// .logo {
-//     margin: 0;
-//     position: relative;
-//     background: #fff;
-// }
-
-// p {
-//     margin: 0 0 1.25em;
-// }
+// burger
 .post-header .burger {
     height: 34px;
     width: 34px;
@@ -217,10 +160,8 @@ main {
     bottom: 0;
 }
 
+// Hero section - pictures on the left and title Albania
 
-.post-header .logo a.active {
-    color: #fff;
-}
 
 .page {
     display: flex;
@@ -239,19 +180,19 @@ main {
             display: none;
             opacity: 0;
         }
+    .carousel-cell {
+        width: 100%;
+        
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+    }
 }
 
-.page-left .carousel-cell {
-    width: 100%;
-}
-
-.page-left .carousel-cell img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    display: block;
-}
-
+    // styling prev and next buttons
 .flickity-prev-next-button {
     bottom: 10px;
     top: unset;
@@ -274,122 +215,93 @@ main {
     left: 26%;
     top: 26%
 }
-
+ // title section
 .page-right {
     width: 100%;
     padding-left: 50%;
+
+    .hero {
+        padding: 60px 230px;
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            width: calc(100% - 100px);
+
+            h1 {
+                font-family: "Bebas Neue", cursive;
+                font-size: 80px;
+                text-transform: uppercase;
+                color: #05100b;
+                padding-top: 30px;
+            }
+        }
+    }
 }
 
-.page-right .hero {
-    padding: 60px 230px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.page-right .hero .title {
-    width: calc(100% - 100px);
-}
-
-.page-right .hero .title h1 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 80px;
-    text-transform: uppercase;
-    color: #05100b;
-    padding-top: 30px;
-}
-
-.page-right .hero .save {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid #000;
-    background: transparent;
-    margin-left: 220px;
-    margin-top: 15px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.page-right .hero .save.active {
-    background: #05100b;
-    
-}
-
-.page-right .hero .save svg {
-    width: 45px;
-    height: 45px;
-    fill:#fff;
-    padding: 3px;
-    
-}
-
-.page-right .hero .save.active svg {
-    fill: #fff;
-}
-
-.page-right .user-wrap{
+// author wrap section
+.page-right .user-wrap {
     padding: 50px 0 0 100px;
 }
 
 .page-right .user {
     display: flex;
     align-items: center;
+
+    img {
+        display: block;
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .bio {
+        font-weight: 600;
+        padding-left: 20px;
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        span {
+            font-weight: normal;
+            color: #555;
+            font-size: 14px;
+        }
+    }
 }
 
-
-.page-right .user img {
-    display: block;
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.page-right .user .bio {
-    font-weight: 600;
-    padding-left: 20px;
-}
-
-.page-right .user .bio a {
-    color: #000;
-    text-decoration: none;
-}
-
-.page-right .user .bio span {
-    font-weight: normal;
-    color: #555;
-    font-size: 14px;
-}
 
 .page-right .text-wrap {
     padding: 50px 0 0 100px;
     width: 100%;
+
+     p {
+        color: #555;
+        line-height: 1.7;
+    }
 }
 
-.page-right .text p {
-    color: #555;
-    line-height: 1.7;
-
-}
-
-.page-right .text p:last-child,
-#show-less {
+.page-right .text {
     text-align: center;
     margin-top: 30px;
 }
 
-.page-right .text p a,
+#read-more,
 #show-less {
-    text-decoration: underline;
     text-align: center;
+    
+    text-decoration: underline;
     cursor: pointer;
+    margin: 10px auto;
+    display: inline-block;
 }
 
-// .page-right .slider-wrap {
-//     // padding-left: 50px;
-// }
+
+
+// slider item section
 
 .page-right .slider-item {
     width: 300px;

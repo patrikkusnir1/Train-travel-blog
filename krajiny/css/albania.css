@@ -23,19 +23,6 @@ section li {
   padding: 0;
 }
 
-.post-header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 60px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
-
 body {
   color: #222;
   font: 125%/1.5em;
@@ -53,35 +40,44 @@ main {
   text-shadow: 0 2px 0 rgba(255, 255, 255, 0.7);
 }
 
-#full-article {
+#full-article,
+.post-footer,
+.pre-footer,
+footer {
   display: none;
 }
 
-.container > header {
-  margin: 0.625em;
-  padding: 1.25em 0.625em 0.625em 0.625em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  text-align: center;
+.no-border {
+  border: none;
+  box-shadow: none;
 }
 
-.container > header h1 {
-  font-size: 3em;
-  line-height: 2.375em;
-  margin: 0;
-  font-weight: 300;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
-  letter-spacing: 0.1041666667em;
+.card-img-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+.card-img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.container > header h2 {
-  font-size: 1em;
-  font-weight: 300;
-  margin: 0;
-  padding: 0.9375em 0 0.3125em 0;
-  color: #666;
-  font-family: Cambria, Georgia, serif;
-  font-style: italic;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+.post-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .post-header .logo a {
@@ -90,6 +86,9 @@ main {
   color: #000;
   font-weight: 700;
   transition: 0.2s ease;
+}
+.post-header .logo a.active {
+  color: #fff;
 }
 
 .post-header .burger {
@@ -147,10 +146,6 @@ main {
   bottom: 0;
 }
 
-.post-header .logo a.active {
-  color: #fff;
-}
-
 .page {
   display: flex;
 }
@@ -168,11 +163,9 @@ main {
   display: none;
   opacity: 0;
 }
-
 .page-left .carousel-cell {
   width: 100%;
 }
-
 .page-left .carousel-cell img {
   width: 100%;
   height: 100vh;
@@ -208,52 +201,20 @@ main {
   width: 100%;
   padding-left: 50%;
 }
-
 .page-right .hero {
   padding: 60px 230px;
   display: flex;
   justify-content: space-between;
 }
-
 .page-right .hero .title {
   width: calc(100% - 100px);
 }
-
 .page-right .hero .title h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 80px;
   text-transform: uppercase;
   color: #05100b;
   padding-top: 30px;
-}
-
-.page-right .hero .save {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  background: transparent;
-  margin-left: 220px;
-  margin-top: 15px;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.page-right .hero .save.active {
-  background: #05100b;
-}
-
-.page-right .hero .save svg {
-  width: 45px;
-  height: 45px;
-  fill: #fff;
-  padding: 3px;
-}
-
-.page-right .hero .save.active svg {
-  fill: #fff;
 }
 
 .page-right .user-wrap {
@@ -264,7 +225,6 @@ main {
   display: flex;
   align-items: center;
 }
-
 .page-right .user img {
   display: block;
   width: 70px;
@@ -272,17 +232,14 @@ main {
   object-fit: cover;
   border-radius: 50%;
 }
-
 .page-right .user .bio {
   font-weight: 600;
   padding-left: 20px;
 }
-
 .page-right .user .bio a {
   color: #000;
   text-decoration: none;
 }
-
 .page-right .user .bio span {
   font-weight: normal;
   color: #555;
@@ -293,23 +250,23 @@ main {
   padding: 50px 0 0 100px;
   width: 100%;
 }
-
-.page-right .text p {
+.page-right .text-wrap p {
   color: #555;
   line-height: 1.7;
 }
 
-.page-right .text p:last-child,
-#show-less {
+.page-right .text {
   text-align: center;
   margin-top: 30px;
 }
 
-.page-right .text p a,
+#read-more,
 #show-less {
-  text-decoration: underline;
   text-align: center;
+  text-decoration: underline;
   cursor: pointer;
+  margin: 10px auto;
+  display: inline-block;
 }
 
 .page-right .slider-item {
