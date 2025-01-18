@@ -7,10 +7,16 @@ TURN ON SASS
 /* TO DO: change font-sizes of headings and paragraphs, cleaning up the code
 
 */
-*, *::before, *::after {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -591,7 +597,7 @@ section li {
 }
 
 div.row {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 p.link {
