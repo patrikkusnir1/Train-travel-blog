@@ -129,6 +129,33 @@ footer {
 }
 
 
+section.introduction {
+    .container {
+        width: 600px;
+    }
+
+    .row:first-child {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        figure {
+            margin-top: 110px;
+            margin-left: 100px;
+            img {
+                max-width: 344px;
+                min-width: 344px;
+            }
+
+            figcaption {
+
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
 // logo name and burger
 .post-header {
     width: 100%;
@@ -404,14 +431,14 @@ footer {
 }
 
 
-.post-title {
-    font-size: 4em;
-    line-height: 3.5em;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    letter-spacing: -2px;
-    margin: 0 0 0.3125em;
-}
+// .post-title {
+//     font-size: 4em;
+//     line-height: 3.5em;
+//     font-family: 'Playfair Display', serif;
+//     font-weight: 800;
+//     letter-spacing: -2px;
+//     margin: 0 0 0.3125em;
+// }
 
 .post-meta time:before {
     content: ' · ';
@@ -481,18 +508,6 @@ nav {
 // }
 
 
-
-
-
-.float-left {
-    float: left;
-}
-
-
-
-
-
-
 /* #navigation {
  float: left;
  height: 100%;
@@ -541,6 +556,8 @@ section li  {
 
 }
 
+/* FOOTER */
+
 .post-footer {
     width: 35em;
     margin: 3em auto;
@@ -560,6 +577,8 @@ section li  {
     height: 180px;
     width: 100%;
 }
+
+
 
 
 
@@ -770,11 +789,11 @@ a#hore {
 }
 
 
-.container {
-    width: 100%;
-    position: relative;
-    transition: all .5s;
-}
+// .container {
+//     width: 100%;
+//     position: relative;
+//     transition: all .5s;
+// }
 
 
 

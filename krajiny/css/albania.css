@@ -119,6 +119,26 @@ footer {
   object-fit: cover;
 }
 
+section.introduction .container {
+  width: 600px;
+}
+section.introduction .row:first-child {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+section.introduction .row:first-child figure {
+  margin-top: 110px;
+  margin-left: 100px;
+}
+section.introduction .row:first-child figure img {
+  max-width: 344px;
+  min-width: 344px;
+}
+section.introduction .row:first-child figure figcaption {
+  margin: 0 auto;
+}
+
 .post-header {
   width: 100%;
   display: flex;
@@ -362,15 +382,6 @@ footer {
   transform: translateY(0px);
 }
 
-.post-title {
-  font-size: 4em;
-  line-height: 3.5em;
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
-  letter-spacing: -2px;
-  margin: 0 0 0.3125em;
-}
-
 .post-meta time:before {
   content: " · ";
   font-style: normal;
@@ -421,10 +432,6 @@ nav {
   display: none;
 }
 
-.float-left {
-  float: left;
-}
-
 /* #navigation {
  float: left;
  height: 100%;
@@ -466,6 +473,7 @@ section li {
   padding-bottom: 0.5em;
 }
 
+/* FOOTER */
 .post-footer {
   width: 35em;
   margin: 3em auto;
@@ -675,12 +683,6 @@ a#hore {
   letter-spacing: 1px;
   color: #333;
   display: inline-block;
-}
-
-.container {
-  width: 100%;
-  position: relative;
-  transition: all 0.5s;
 }
 
 .shadow .big-margin {
