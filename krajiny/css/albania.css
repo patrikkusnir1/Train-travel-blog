@@ -70,7 +70,6 @@ ul, li {
   list-style-type: none;
 }
 
-section ul,
 section li {
   display: list-item;
   list-style-type: square;
@@ -81,7 +80,8 @@ section li p.second {
   margin-top: 0.7rem;
 }
 
-main {
+main, .post-footer,
+.pre-footer {
   padding: 0 20%;
   width: 100%;
   text-shadow: 0 2px 0 rgba(255, 255, 255, 0.7);
@@ -89,7 +89,7 @@ main {
 
 article {
   margin: 0 auto;
-  width: 60%;
+  width: 75%;
 }
 
 #full-article,
@@ -328,7 +328,8 @@ section.introduction .row:first-child figure figcaption {
 #read-more,
 #show-less {
   text-align: center;
-  text-decoration: underline;
+  font-size: 16px;
+  text-decoration: none;
   cursor: pointer;
   margin: 10px auto;
   display: inline-block;
@@ -475,9 +476,12 @@ section li {
 
 /* FOOTER */
 .post-footer {
-  width: 35em;
+  width: 75%;
   margin: 3em auto;
   clear: both;
+}
+.post-footer h2, .post-footer h3, .post-footer img {
+  text-align: center;
 }
 
 .post-footer > h3 {
