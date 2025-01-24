@@ -36,7 +36,7 @@ burger.addEventListener("click", function () {
 $(window).on("scroll", function () {
   let sticky = $(".page-left"),
     scroll = $(window).scrollTop();
-  if (scroll >= 625) sticky.addClass("hide");
+  if (scroll >= 1500) sticky.addClass("hide");
   else {
     sticky.removeClass("hide");
   }

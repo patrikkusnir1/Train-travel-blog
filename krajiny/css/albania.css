@@ -549,10 +549,11 @@ section li {
   font-style: italic;
 }
 
-.reviews-byline {
+.review-byline {
   font-weight: bold;
   padding-left: 30px;
   margin-bottom: 8px;
+  font-size: 14px;
 }
 
 .reviews-byline::before {
@@ -687,6 +688,41 @@ a#hore {
   letter-spacing: 1px;
   color: #333;
   display: inline-block;
+}
+
+.london-tirane {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.london-tirane .left-side {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border: 2px solid #f4f4f4;
+  margin-left: 0;
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+.london-tirane .left-side ul {
+  list-style-type: none;
+  padding: 0;
+}
+.london-tirane .left-side ul li a {
+  padding: 5px;
+}
+.london-tirane .left-side ul li a:hover {
+  background-color: #ddd;
+}
+
+.london-tirane .right-side {
+  width: 70%;
+  margin-right: 0;
 }
 
 .shadow .big-margin {
@@ -872,8 +908,15 @@ label #cancel {
   margin-left: 700px;
 }
 
-.photo {
+.photo-container {
   margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+.photo-container a {
+  display: block;
+  justify-content: center;
+  margin-left: 120px;
 }
 
 .author-photo {
